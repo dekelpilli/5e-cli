@@ -155,7 +155,7 @@ var chaos = func(_ Request) (ViewModel, error) {
 }
 
 var PERK_CHANCE = 20
-var CARNIVAL_CHANCE = 10
+var CARNIVAL_CHANCE = 11
 var OTHERWORLDLY_CHANCE = 3
 
 var combat = func(_ Request) (ViewModel, error) {
@@ -273,6 +273,39 @@ var dream = func(req Request) (ViewModel, error) {
 	return ViewModel{
 		Title:    fmt.Sprintf("%s's dream", char),
 		Sections: sectionOf(Item{Body: processString(mod.Description), Metadata: []string{mod.PointValue, mod.Upgrade}}),
+	}, nil
+}
+
+var augment = func(req Request) (ViewModel, error) {
+	char := req.str("character")
+	if char == "" {
+		char = randSelect(PARTY_MEMBERS)
+	} else if !slices.Contains(PARTY_MEMBERS, char) {
+		return ViewModel{}, fmt.Errorf("invalid party member %q", char)
+	}
+
+	augments, err := fetchAugments(char)
+	if err != nil {
+		return ViewModel{}, err
+	}
+	if len(augments) == 0 {
+		return ViewModel{}, fmt.Errorf("no dream pool configured for %q", char)
+	}
+	a1 := randSelect(augments)
+	a2 := a1
+	a3 := a1
+	for a1 == a2 || a1 == a3 || a2 == a3 {
+		a2 = randSelect(augments)
+		a3 = randSelect(augments)
+	}
+
+	return ViewModel{
+		Title: fmt.Sprintf("%s's Augment Options", char),
+		Sections: sectionOf(
+			Item{Title: a1.Name, Body: a1.Description},
+			Item{Title: a2.Name, Body: a2.Description},
+			Item{Title: a3.Name, Body: a3.Description},
+		),
 	}, nil
 }
 

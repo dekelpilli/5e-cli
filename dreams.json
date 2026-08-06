@@ -1,10 +1,12 @@
 {
-    "Quincy (0)": [
-    ],
-    "Viktor (0)": [
-    ],
-    "Arthur (0)": [
-    ],
-    "Nathaniel (0)": [
-    ]
+  "Quincy": [],
+  "Viktor (monstrous minion)": [],
+  "Arthur (sneak attack)": [
+    {
+      "description": "ability check rolls you Help have a +2 bonus",
+      "pointValue": "1",
+      "upgrade": "+1/1"
+    }
+  ],
+  "Nathaniel": []
 }
