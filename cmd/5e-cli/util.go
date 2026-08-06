@@ -54,7 +54,7 @@ func fetchDreamPool(char string) ([]Affix, error) {
 func fetchAugments(char string) ([]Augment, error) {
 	augments, err := fetchData("augment", map[string][]Augment{})
 	if err != nil {
-		return []Affix{}, err
+		return []Augment{}, err
 	}
 	return augments[char], nil
 }

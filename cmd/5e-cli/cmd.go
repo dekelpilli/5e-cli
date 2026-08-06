@@ -299,11 +299,6 @@ var augment = func(req Request) (ViewModel, error) {
 		a3 = randSelect(augments)
 	}
 
-	var augmentDescriptions []string
-	for _, a := range []Augment{a1, a2, a3} {
-		augmentDescriptions = append(augmentDescriptions, fmt.Sprintf("**%s:** %s", a.Name, a.Description))
-	}
-
 	return ViewModel{
 		Title: fmt.Sprintf("%s's Augment Options", char),
 		Sections: sectionOf(
