@@ -125,7 +125,10 @@ var SPECIALISATION_TYPES map[string][]string = map[string][]string{
 var PARTY_LEVEL int = 1
 
 var CITIES []string = []string{
-	"Imperial City",
+	"Jodia",
+	"Farrafirth",
+	"Ancamter",
+	"Birenield",
 }
 
 var LIGHT_TYPES []string = []string{
