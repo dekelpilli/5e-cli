@@ -31,6 +31,23 @@ func (r Request) num(key string) (float64, bool) {
 	}
 }
 
+// strs returns a `list?` string input as a []string. Absent, non-array, or
+// non-string elements are dropped rather than erroring, matching str/num's
+// permissive style (an empty result reads the same as "not provided").
+func (r Request) strs(key string) []string {
+	arr, ok := r.Inputs[key].([]any)
+	if !ok {
+		return nil
+	}
+	out := make([]string, 0, len(arr))
+	for _, v := range arr {
+		if s, ok := v.(string); ok {
+			out = append(out, s)
+		}
+	}
+	return out
+}
+
 // Item is a single generated line, mapped by sns-companion to `:item/*` keys.
 type Item struct {
 	Title    string   `json:"title,omitempty"`

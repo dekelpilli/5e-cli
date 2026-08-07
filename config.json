@@ -700,8 +700,9 @@
       "inputs": [
         {
           "id": "affinities",
-          "label": "Affinities (space-separated)",
+          "label": "Affinities",
           "type": "enum",
+          "list?": true,
           "options": [
             "control",
             "support",

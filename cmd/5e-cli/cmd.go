@@ -41,9 +41,9 @@ var targetAffix = func(req Request) (ViewModel, error) {
 		return ViewModel{}, err
 	}
 
-	affinities := strings.Fields(req.str("affinities"))
+	affinities := req.strs("affinities")
 	if len(affinities) == 0 {
-		return ViewModel{}, fmt.Errorf("input %q (space-separated affinities) is required", "affinities")
+		return ViewModel{}, fmt.Errorf("input %q is required", "affinities")
 	}
 	for _, a := range affinities {
 		if !slices.Contains(AFFINITIES, a) {
