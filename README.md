@@ -134,8 +134,8 @@ Specialisation after the first 'event' of sessions 4, 7, 10, 13, 16 (5 total)
 Augment after the first 'event' of sessions 6, 12, 18 (3 total)
 
 DELAYED:
-Specialisation after the first 'event' of sessions 4, 8, 11, 14, 17 (5 total)
-Augment after the first 'event' of sessions 7, 13, 19 (3 total)
+Specialisation after the first 'event' of sessions 4, 9, 12, 15, 18 (5 total)
+Augment after the first 'event' of sessions 8, 14, 20 (3 total)
 
 ## Feats
 Quincy - Sharpshooter, Medium Armour Master
