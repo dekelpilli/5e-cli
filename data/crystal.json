@@ -71,7 +71,7 @@
     "name": "Volt Reaver",
     "passives": [
       "lightning rod",
-      "motor drive",
+      "power drive",
       "blade sipper"
     ],
     "powers": [

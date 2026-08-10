@@ -800,6 +800,19 @@
   "reporting": {
     "backend": "discord",
     "webhook-url": "https://discord.com/api/webhooks/1260450657106657471/u_MFUHIiDfRP3s7tZ6smttVpSmWaIyaK8DfEg2ffXBTd5yf9jBjBcsi5eTwOfplao3mu",
-    "avatar-url": "https://media.discordapp.net/attachments/1248589017709150332/1248596614973493298/4503592c-ae86-4f1d-b90c-848a52e19bb3.jpeg?ex=668f1676&is=668dc4f6&hm=dff3a184f854a7b1d388a65ac5bf804b306abb4539cb2ec1035f6016585229e7&=&format=webp&width=960&height=960"
+    "avatar-url": "https://media.discordapp.net/attachments/1248589017709150332/1248596614973493298/4503592c-ae86-4f1d-b90c-848a52e19bb3.jpeg?ex=668f1676&is=668dc4f6&hm=dff3a184f854a7b1d388a65ac5bf804b306abb4539cb2ec1035f6016585229e7&=&format=webp&width=960&height=960",
+    "extra-words": [
+      "Lawrence",
+      "Pip",
+      "Eris",
+      "Dekel",
+      "Jonathon",
+      "Dan",
+      "Bentley",
+      "Quincy",
+      "Nathaniel",
+      "Arthur",
+      "Viktor"
+    ]
   }
 }

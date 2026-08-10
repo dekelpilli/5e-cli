@@ -103,7 +103,7 @@ var FLARE_CHANCES map[string]int = map[string]int{
 	"Quincy":    12, // +2%, rank 1
 	"Viktor":    12, // +2%, rank 1
 	"Arthur":    13, // +0%, rank 1
-	"Nathaniel": 12, // +2%, rank 1
+	"Nathaniel": 20, // +4%, rank 3
 }
 
 var INSIGHTS map[string]int = map[string]int{
