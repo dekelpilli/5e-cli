@@ -2262,8 +2262,8 @@
     },
     "upgrades": [
       {
-        "description": "1. -1 damage and +2 resistance",
-        "upgrade": "-1 and +2"
+        "description": "1. -1 damage and +16 max HP",
+        "upgrade": "-1 and +16"
       },
       {
         "description": "2. -2 intercepted damage taken",
