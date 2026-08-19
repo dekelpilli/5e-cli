@@ -112,5 +112,8 @@
   "contrary": "Whenever your damage would be reduced or damage you take would be increased, it is instead increased or reduced, respectively, by the same amount.",
   "wonder skin": "You have +1 to all defences against non-damaging attacks.",
   "cheek pouch": "+3 incoming healing.",
-  "magician": "On hit, gain 1 Supply."
+  "magician": "On hit, gain 1 Supply.",
+  "static": "When hit by a melee attack, the attacker becomes staggered for the remainder of combat.",
+  "weighted strikes": "While your armour is 5+ or you are holding a shield, you deal +4 damage.",
+  "no guard": "The success tier of your attacks is always increased by 1, but so is the tier of attacks against you."
 }

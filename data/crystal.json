@@ -1809,5 +1809,29 @@
       "keen strike",
       "battlecry"
     ]
+  },
+  {
+    "name": "Thunder Juggernaut",
+    "passives": [
+      "static",
+      "weighted strikes",
+      "electric surge",
+      "no guard",
+      "lightning rod"
+    ],
+    "powers": [
+      "imbue frailty",
+      "discombobulate",
+      "exposing strike",
+      "tactical prowess",
+      "imbue helplessness",
+      "dodge",
+      "sudden strike",
+      "frustrated strike",
+      "power-up",
+      "shattering strike",
+      "impeding aura",
+      "imbue fragility"
+    ]
   }
 ]
