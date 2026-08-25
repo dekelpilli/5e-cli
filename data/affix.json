@@ -1110,7 +1110,7 @@
         "affinities": ["utility"]
     },
     {
-        "description": "+1 damage with weapon attacks enhanced by a spell",
+        "description": "+2 damage with weapon attacks enhanced by a spell",
         "pointValue": "1",
         "upgrade": "+1/1",
         "affinities": ["offence"]

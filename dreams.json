@@ -1,6 +1,18 @@
 {
-  "Quincy": [],
-  "Viktor (monstrous minion)": [],
+  "Quincy (sharpshooter feat)": [
+    {
+      "description": "your scaffolds now provide full cover",
+      "pointValue": "2",
+      "upgrade": "+7 scaffold HP/1"
+    }
+  ],
+  "Viktor": [
+    {
+      "description": "your Monstrous Minion's temporary HP increases by 3 on initiative roll",
+      "pointValue": "1",
+      "upgrade": "+2/1"
+    }
+  ],
   "Arthur (sneak attack)": [
     {
       "description": "ability check rolls you Help have a +2 bonus",

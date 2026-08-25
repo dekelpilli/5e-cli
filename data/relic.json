@@ -1664,58 +1664,6 @@
         ]
     },
     {
-        "name": "Guardian of Souls",
-        "startingAffixes": [
-            {
-                "description": "+1 spell damage while holding a shield",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "allies within 45' of you have +1 melee weapon damage",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "1/combat, as a bonus action, heal an allied minion within 90' of you for 6 HP",
-                "pointValue": "1",
-                "upgrade": "+6/1"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +1 damage with sword weapons",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. -1 resistance while holding a shield; 3pts distributed",
-                "pointValue": "1",
-                "upgrade": "-1 and 3pts distributed/1"
-            },
-            {
-                "description": "3. +5' fly speed",
-                "pointValue": "3",
-                "upgrade": "+5'/3"
-            },
-            {
-                "description": "4. you cannot have advantage or disadvantage on saves",
-                "pointValue": "1",
-                "upgrade": "+1 to saves that would be advantaged/4"
-            },
-            {
-                "description": "5. +1 spell damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "6. +1 spell critical success range",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            }
-        ]
-    },
-    {
         "name": "The Artificer",
         "startingAffixes": [
             {
@@ -2336,58 +2284,6 @@
                 "description": "6. on melee hit, gain +1 melee damage for the remainder of combat",
                 "pointValue": "2",
                 "upgrade": "+1/2"
-            }
-        ]
-    },
-    {
-        "name": "Mjolnir",
-        "startingAffixes": [
-            {
-                "description": "+1 bludgeoning damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "while your Intelligence is 20+, +1 bludgeoning damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "on melee hit, a creature of your choice within 15' of you suffers 1 lightning harm",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. while your Strength is 20+ +1 bludgeoning damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. +1 weapon damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "3. +1 outgoing lightning harm",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "4. you ignore bludgeoning resistance",
-                "pointValue": "3",
-                "upgrade": "+1 bludgeoning damage/1"
-            },
-            {
-                "description": "5. gain bludgeoning damage equal to your bonus outgoing lightning harm",
-                "pointValue": "2",
-                "upgrade": "+1 outgoing lightning harm/1"
-            },
-            {
-                "description": "6. on bludgeoning hit, a creature of your choice within 15' of you suffers 1 lightning harm",
-                "pointValue": "1",
-                "upgrade": "+1/1"
             }
         ]
     },

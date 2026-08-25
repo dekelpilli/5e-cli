@@ -2,54 +2,116 @@
   "Quincy": [],
   "Viktor": [
     {
-      "name": "Onyx",
+      "name": "Mjolnir (L3)",
       "startingAffixes": [
         {
-          "description": "the first time between rests that you go down, make a save, ignoring the wound on a success",
+          "description": "+1 bludgeoning damage",
           "pointValue": "1",
-          "upgrade": "+1 time/1"
+          "upgrade": "+1/1"
         },
         {
-          "description": "+1 resistance",
-          "pointValue": "2 (1/2)",
-          "upgrade": "+1/2"
+          "description": "while your Intelligence is 20+, +2 bludgeoning damage",
+          "pointValue": "2",
+          "upgrade": "+1/1"
         },
         {
-          "description": "the first time between rests that you go down, gain +2 resistance for the remainder of combat",
+          "description": "on melee hit, a creature of your choice within 15' of you suffers 1 lightning harm",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "+2 damage with weapon attacks enhanced by a spell",
           "pointValue": "1",
           "upgrade": "+1/1"
         }
       ],
       "thematicAffixes": [
         {
-          "description": "1. +2 necrotic resistance",
+          "description": "1. while your Strength is 20+ +1 bludgeoning damage",
           "pointValue": "1",
           "upgrade": "+1/1"
         },
         {
-          "description": "2. +1 fortitude",
-          "pointValue": "4",
-          "upgrade": "+1/4"
+          "description": "2. +1 weapon damage",
+          "pointValue": "1",
+          "upgrade": "+1/1"
         },
         {
-          "description": "3. +1 to death saves",
-          "pointValue": "4",
-          "upgrade": "+1/4"
+          "description": "3. +1 outgoing lightning harm",
+          "pointValue": "1",
+          "upgrade": "+1/1"
         },
         {
-          "description": "4. your areas are 5' larger if you haven't moved since the start of your last turn",
+          "description": "4. you ignore bludgeoning resistance",
+          "pointValue": "3",
+          "upgrade": "+1 bludgeoning damage/1"
+        },
+        {
+          "description": "5. gain bludgeoning damage equal to your bonus outgoing lightning harm",
           "pointValue": "2",
-          "upgrade": "+5'/2"
+          "upgrade": "+1 outgoing lightning harm/1"
         },
         {
-          "description": "5. the first time between rests that you would go down, gain 9 temporary HP, which is consumed as part of the effect taking you down, potentially keeping you above 0 HP",
+          "description": "6. on bludgeoning hit, a creature of your choice within 15' of you suffers 1 lightning harm",
           "pointValue": "1",
-          "upgrade": "+9/1"
+          "upgrade": "+1/1"
+        }
+      ]
+    },
+    {
+      "name": "Guardian of Souls (L2)",
+      "startingAffixes": [
+        {
+          "description": "+1 spell damage while holding a shield",
+          "pointValue": "1",
+          "upgrade": "+1/1"
         },
         {
-          "description": "6. -4 maximum HP; 2pts distributed",
+          "description": "allies within 45' of you have +1 melee weapon damage",
+          "pointValue": "2",
+          "upgrade": "+1/2"
+        },
+        {
+          "description": "1/combat, as a bonus action, heal an allied minion within 90' of you for 6 HP",
           "pointValue": "1",
-          "upgrade": "-4 and 2pts distributed/1"
+          "upgrade": "+6/1"
+        },
+        {
+          "description": "+1 resistance while adjacent to Quincy",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        }
+      ],
+      "thematicAffixes": [
+        {
+          "description": "1. +1 damage with sword weapons",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "2. -1 resistance while holding a shield; 3pts distributed",
+          "pointValue": "1",
+          "upgrade": "-1 and 3pts distributed/1"
+        },
+        {
+          "description": "3. +5' fly speed",
+          "pointValue": "3",
+          "upgrade": "+5'/3"
+        },
+        {
+          "description": "4. you cannot have advantage or disadvantage on saves",
+          "pointValue": "1",
+          "upgrade": "+1 to saves that would be advantaged/4"
+        },
+        {
+          "description": "5. +1 spell damage",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "6. +1 spell critical success range",
+          "pointValue": "4",
+          "upgrade": "+1/4"
         }
       ]
     }

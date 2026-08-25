@@ -16,11 +16,6 @@
             "description": "Whenever the weather obscures the moon (Blizzard or Downpour), you have +5 critical success range for the Cook journey activity."
         },
         {
-            "type": "identity",
-            "name": "Homesick",
-            "description": "While an ally is adjacent to you or a scaffold you are perched on, your ranged attacks have +2 AB."
-        },
-        {
             "type": "gap",
             "name": "Survival Training",
             "description": "You can use the Cook journey activity even during Sweltering weather."
@@ -91,11 +86,6 @@
             "type": "keyword",
             "name": "Devotion",
             "description": "Whenever you are hit, your Monstrous Minion becomes Enraged for 1 round. While Enraged, it has +20 feet of Speed and deals additional damage equal to double your level."
-        },
-        {
-            "type": "generated",
-            "name": "Extensive Care",
-            "description": "The temporary hit points your Monstrous Minion gains upon rolling initiative increase by an amount equal to your Intelligence modifier times your proficiency bonus."
         },
         {
             "type": "generated",

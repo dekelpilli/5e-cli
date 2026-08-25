@@ -6,22 +6,12 @@
       "upgrade": "+1 Dexterity/2"
     },
     {
-      "description": "your scaffolds now provide three-quarters cover",
-      "pointValue": "1",
-      "upgrade": "full cover -> +7 scaffold HP/1"
-    },
-    {
       "description": "your scaffolds are created with 7 temporary HP",
       "pointValue": "1",
       "upgrade": "+7/1"
     }
   ],
   "Viktor": [
-    {
-      "description": "your Monstrous Minion gains 7 additional temporary HP on initiative roll",
-      "pointValue": "1",
-      "upgrade": "+6/1"
-    },
     {
       "description": "your Monstrous Minion's Bite attack deals +4 damage",
       "pointValue": "1",
