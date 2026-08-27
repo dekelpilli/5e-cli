@@ -1,0 +1,16 @@
+{
+  "Quincy": [
+    {
+      "type": "identity",
+      "name": "Homesick",
+      "description": "While an ally is adjacent to you or a scaffold you are perched on, your ranged attacks have +2 AB."
+    }
+  ],
+  "Viktor": [
+    {
+      "type": "generated",
+      "name": "Extensive Care",
+      "description": "Whenever you roll for initiative, your Monstrous Minion is healed for a number of hit points equal to your Intelligence modifier times your proficiency bonus."
+    }
+  ]
+}
