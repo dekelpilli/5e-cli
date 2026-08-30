@@ -137,6 +137,12 @@ DELAYED:
 Specialisation after the first 'event' of sessions 4, 9, 12, 15, 18 (5 total)
 Augment after the first 'event' of sessions 8, 14, 20 (3 total)
 
+City Building:
+1. Outpost generator - Propagate jumps inheriting random trait from parent
+2. Salvage yard - every x experience gain, bank a loot roll
+3. Circus - an extra game option when going to carnival, people can choose which one they want to join
+4. Skill tree for permanent bonuses
+
 ## Feats
 Quincy - Sharpshooter, Medium Armour Master
 Viktor - Warlord, Decayer

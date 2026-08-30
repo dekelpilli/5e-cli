@@ -12,5 +12,19 @@
       "name": "Extensive Care",
       "description": "Whenever you roll for initiative, your Monstrous Minion is healed for a number of hit points equal to your Intelligence modifier times your proficiency bonus."
     }
+  ],
+  "Arthur": [
+    {
+      "type": "generated",
+      "name": "Superior Support",
+      "description": "Your Help action's range is increased by 30 feet, and attacks aided by your Help action also have +1 AB."
+    }
+  ],
+  "Nathaniel": [
+    {
+      "type": "keyword",
+      "name": "Battle Entertainment",
+      "description": "Whenever you consume your Bardic Inspiration, you start Performing for 1 round. While Performing, allies within 60 feet of you have +1 AB."
+    }
   ]
 }
