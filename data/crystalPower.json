@@ -50,7 +50,7 @@
   "face strike": "Deal damage and give the target -rank to all attack rolls until it passes a passive save.",
   "coup de grace": "If the target is unconcscious, deal double damage and heal 6*rank HP.",
   "dodge": "You gain +rank to all defences for the remainder of combat.",
-  "guided strike": "Choose the target, then this power does nothing for 2 rounds. Then, deal triple damage.",
+  "guided strike": "Choose the target, then this power does nothing for 2 rounds. Then, deal quadruple damage.",
   "temporal distortion": "Immediately reverse the initiative order, and then move yourself rank positions up the track. Any movements remaining once you reach the top of the track grant you +1 damage for the remainder of combat.",
   "war dance": "You gain +2*rank ranged/area resistance and +rank damage for the remainder of combat.",
   "terminal decay": "Inflict rank ongoing crystal damage, stacking for the remainder of combat on the target. This ongoing damage doubles whenever it ticks.",
