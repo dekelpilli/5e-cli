@@ -936,58 +936,6 @@
         ]
     },
     {
-        "name": "Celestial Cloak",
-        "startingAffixes": [
-            {
-                "description": "+2 fire resistance",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "+2 lightning resistance",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "+1 resistance",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +2 cold resistance",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. +1 fire damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "3. on hit, cause 1 ongoing fire harm, stacking until the target passes a passive save",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "4. +1 lightning damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "5. on hit, recover 1 exertion",
-                "pointValue": "3",
-                "upgrade": "+1/3"
-            },
-            {
-                "description": "6. +1 poison damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            }
-        ]
-    },
-    {
         "name": "Tyrant's Cloak",
         "startingAffixes": [
             {
