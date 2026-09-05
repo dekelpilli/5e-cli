@@ -27,6 +27,7 @@ var COMMAND_MAP = map[string]CommandFunc{
 	"mission":          mission,
 	"crystal":          crystal,
 	"crystal power":    crystalPower,
+	"crystal procs":    crystalProcs,
 	"amulet":           amulet,
 	"prize":            prize,
 	"tarot":            tarot,

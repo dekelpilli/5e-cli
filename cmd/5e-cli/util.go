@@ -16,6 +16,19 @@ const DATA_DIR = "data"
 // flag (defaulting to a `data` directory beside the executable or the cwd).
 var dataDir = DATA_DIR
 
+// plural renders a count with its noun, e.g. "1 flare" / "3 flares".
+func plural(n int, noun string) string {
+	return fmt.Sprintf("%d %s", n, pluralWord(n, noun))
+}
+
+// pluralWord is plural's noun half, for a count rendered separately.
+func pluralWord(n int, noun string) string {
+	if n == 1 {
+		return noun
+	}
+	return noun + "s"
+}
+
 func randSelect[S []E, E any](s S) E {
 	return s[rand.Intn(len(s))]
 }

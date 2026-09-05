@@ -8,6 +8,8 @@
 *.dylib
 .vscode
 *.jar
+*.lsp
+*.clj-kondo
 
 # Test binary, built with `go test -c`
 *.test

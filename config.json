@@ -3,6 +3,10 @@
     "host": "127.0.0.1",
     "port": 8019
   },
+  "storage": {
+    "backend": "file",
+    "dir": "state"
+  },
   "plugins": [
     {
       "type": "cli",
@@ -776,6 +780,38 @@
         "data",
         "xiloan"
       ]
+    },
+    {
+      "type": "cli",
+      "id": "crystals",
+      "label": "Crystal Flares",
+      "utility?": true,
+      "command": [
+        "./5e-cli",
+        "-data",
+        "data",
+        "crystal",
+        "procs"
+      ],
+      "inputs": [
+        {
+          "id": "rounds",
+          "label": "Combat rounds",
+          "type": "int",
+          "default": 10
+        }
+      ],
+      "store/manual": {
+        "key-label": "Character",
+        "fields": [
+          {
+            "id": "chance",
+            "label": "Flare chance (%)",
+            "type": "int",
+            "default": 10
+          }
+        ]
+      }
     }
   ],
   "loot-table": [

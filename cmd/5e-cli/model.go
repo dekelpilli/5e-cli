@@ -45,6 +45,14 @@ type Crystal struct {
 	Powers   []string `json:"powers"`
 }
 
+// CrystalFlare is one row of the `crystals` collection: a character's per-round
+// flare chance, as a percentage. The DM maintains it in sns-companion's
+// manual-state editor rather than here, so a rank-up is a field edit instead of
+// a recompile (cf. FLARE_CHANCES).
+type CrystalFlare struct {
+	Chance int `json:"chance"`
+}
+
 type Augment struct {
 	Type        string `json:"type"`
 	Name        string `json:"name"`

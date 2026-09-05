@@ -1,14 +1,41 @@
 package main
 
+import (
+	"encoding/json"
+	"fmt"
+)
+
 // This file defines the JSON contract 5e-cli speaks when driven as a
 // non-interactive helper (e.g. by sns-companion). A request arrives on stdin
 // and a view-model is written to stdout.
 
-// Request is the context handed to a command on stdin. Both fields are
+// Request is the context handed to a command on stdin. Every field is
 // optional; a command that needs no inputs can be run with no stdin at all.
+//
+// State holds the store collections this plugin declared with
+// `store/collections` or `store/manual` on its config entry, already read for
+// us — sns-companion owns the persistence, so we never touch its files and
+// never learn which backend it is using. Each collection is left raw so a
+// command can unmarshal it into whatever shape it expects; see collection.
 type Request struct {
-	Inputs  map[string]any `json:"inputs"`
-	Session map[string]any `json:"session"`
+	Inputs  map[string]any             `json:"inputs"`
+	Session map[string]any             `json:"session"`
+	State   map[string]json.RawMessage `json:"state"`
+}
+
+// collection unmarshals one of the request's store collections into T. An
+// absent collection is the zero value, matching sns-companion, where a
+// collection nothing has written to reads as empty.
+func collection[T any](r Request, name string) (T, error) {
+	var out T
+	raw, ok := r.State[name]
+	if !ok || len(raw) == 0 {
+		return out, nil
+	}
+	if err := json.Unmarshal(raw, &out); err != nil {
+		return out, fmt.Errorf("could not read the %q collection: %w", name, err)
+	}
+	return out, nil
 }
 
 // str returns a string input, or "" when absent/not a string.
@@ -68,11 +95,16 @@ type Action struct {
 }
 
 // ViewModel is the friendly, un-namespaced result sns-companion consumes.
+//
+// Mutations are writes to apply, shaped {collection: {key: value}} with a null
+// retracting a key. sns-companion applies them only once this output has
+// validated, so a command that ends in an error changes nothing.
 type ViewModel struct {
-	Title    string    `json:"title"`
-	Subtitle string    `json:"subtitle,omitempty"`
-	Sections []Section `json:"sections,omitempty"`
-	Actions  []Action  `json:"actions,omitempty"`
+	Title     string                    `json:"title"`
+	Subtitle  string                    `json:"subtitle,omitempty"`
+	Sections  []Section                 `json:"sections,omitempty"`
+	Actions   []Action                  `json:"actions,omitempty"`
+	Mutations map[string]map[string]any `json:"mutations,omitempty"`
 }
 
 // CommandFunc is a single loot generator: it reads the request and produces a

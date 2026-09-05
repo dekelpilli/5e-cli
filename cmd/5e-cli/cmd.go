@@ -378,6 +378,60 @@ var crystal = func(_ Request) (ViewModel, error) {
 	}, nil
 }
 
+// DEFAULT_PROC_ROUNDS is the combat length assumed when none is entered.
+var DEFAULT_PROC_ROUNDS = 10
+
+var crystalProcs = func(req Request) (ViewModel, error) {
+	ledger, err := collection[map[string]CrystalFlare](req, "crystals")
+	if err != nil {
+		return ViewModel{}, err
+	}
+	if len(ledger) == 0 {
+		return vmText("No flare chances recorded",
+			"Add each character and their crystal's flare chance above."), nil
+	}
+
+	rounds := DEFAULT_PROC_ROUNDS
+	if n, ok := req.num("rounds"); ok && n >= 1 {
+		rounds = int(n)
+	}
+
+	names := make([]string, 0, len(ledger))
+	for name := range ledger {
+		names = append(names, name)
+	}
+	slices.Sort(names)
+
+	total := 0
+	var flares []Item
+	for round := 1; round <= rounds; round++ {
+		var flared []string
+		for _, name := range names {
+			if rand.Intn(100) < ledger[name].Chance {
+				total++
+				flared = append(flared, name)
+			}
+		}
+		// Quiet rounds are dropped rather than listed, so a ten-round readout
+		// shows only what the DM has to narrate.
+		if len(flared) > 0 {
+			flares = append(flares, Item{
+				Title: fmt.Sprintf("Round %d", round),
+				Body:  fmt.Sprintf("the crystals of %s flare", strings.Join(flared, ", ")),
+			})
+		}
+	}
+	if len(flares) == 0 {
+		flares = []Item{{Body: "No crystals flare."}}
+	}
+
+	return ViewModel{
+		Title:    fmt.Sprintf("%s over %d %s", plural(total, "flare"), rounds, pluralWord(rounds, "round")),
+		Subtitle: plural(len(ledger), "character") + " tracked",
+		Sections: sectionOf(flares...),
+	}, nil
+}
+
 var crystalPower = func(req Request) (ViewModel, error) {
 	crystals, err := fetchData("crystal", []Crystal{})
 	if err != nil {
