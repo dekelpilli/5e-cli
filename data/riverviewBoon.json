@@ -1,0 +1,336 @@
+[
+  {
+    "name": "Might",
+    "description": "+1 Strength",
+    "children": [
+      {
+        "name": "Falling Arsenal",
+        "description": "Once per combat, as a Riverview action, you can drop an ethereal copy of your main hand weapon in a space within 60 feet of you. The weapon remains there for 1 round, during which time its space and all spaces adjacent to it are a persistent zone, causing harm to foes of the weapon's base type equal to your level.",
+        "children": [
+          {
+            "name": "DI Falling Sword skill",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Combat Skill",
+        "description": "Whenever you long jump, you may cause harm of your main hand weapon's base type to one creature adjacent to your destination equal to your level.",
+        "children": [
+          {
+            "name": "D2 Korlic boss",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Ferocious Knight",
+        "description": "Whenever you score a major success with a melee attack, the target becomes frightened of you for 1 round.",
+        "children": [
+          {
+            "name": "AQ Pria knight class",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Prowess",
+    "description": "+1 Dexterity",
+    "children": [
+      {
+        "name": "Staminaborn",
+        "description": "On attack critical success, recover 1 exertion.",
+        "children": [
+          {
+            "name": "LE Rageborn primalist passive",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Weighted Strikes",
+        "description": "Your attacks deal additional damage to creatures not standing on the ground equal to your level.",
+        "children": [
+          {
+            "name": "FEH Carrot Bow+ weapon on Linhardt Spring Snoozer",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Sanguine Merriment",
+        "description": "Whenever your party kills a creature suffering from ongoing harm, recover 2 exertion.",
+        "children": [
+          {
+            "name": "PoE2 Spiteful Floret unique",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Constitution",
+    "description": "+4 maximum HP",
+    "children": [
+      {
+        "name": "Toxic Skin",
+        "description": "Once per long rest, you can coat your body in poison until your next rest. This requires your concentration. Whenever a creature adjacent to you hits you with a melee weapon attack during that time, it makes a save, becoming poisoned and suffering 1d6 ongoing poison harm on a fail, both until it passes a passive save.",
+        "children": [
+          {
+            "name": "A5E Ring of the Vengeance Seeker",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Stone Body",
+        "description": "Your skin becomes stone, all gold costs from your journey activities are halved, you no longer need to breathe, you gain +4 maximum HP, your armour increases by 1, your reflex decreases by 1, and your unarmed attacks deal additional damage equal to your proficiency bonus.",
+        "children": [
+          {
+            "name": "Cypher Stone Body abides in stone focus trait",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mass Revival",
+        "description": "Once per long rest, as a Riverview action, you can instantly revive all allies on 0 HP within 60' of you. While this action is not on cooldown, it occupies your concentration.",
+        "children": [
+          {
+            "name": "WoW High Inquisitor Whitemane",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Intellect",
+    "description": "+1 Intelligence",
+    "children": [
+      {
+        "name": "A Solution for Anything",
+        "description": "Once per long rest, when a creature who can sense you starts their turn, you can grant it the ability to ignore all sources of disadvantage until its next turn.",
+        "children": [
+          {
+            "name": "A5E Nothing that Can't Be Solved savant feature",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Transmogrify",
+        "description": "During a long rest, you can perform a ritual to grant a creature of your choice ugly, troll-like features until your next long rest. To do so, the target must be on the same plane of existence as you, and you must have some of their DNA. While a creature has these features, they have a -4 penalty to all Persuasion and Deception checks.",
+        "children": [
+          {
+            "name": "Buffy Thornton's Hope",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Pensive Reclusion",
+        "description": "You deal additional damage equal to your level while no allies are within 10' of you.",
+        "children": [
+          {
+            "name": "NW Blessed Wanderer paladin class feature",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Understanding",
+    "description": "+1 Wisdom",
+    "children": [
+      {
+        "name": "All Existence is the Same",
+        "description": "You can consider any creature to be of any creature type of your choice at will.",
+        "children": [
+          {
+            "name": "Temtem Eraser gear",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Orbit",
+        "description": "Whenever you roll for initiative, an orb of static electricity begins to orbit you at an unpredictable distance. Roll a d6, and for the remainder of combat you project a persistent zone that always, and only, covers the spaces that are a number of spaces away from you equal to the roll. This persistent zone causes lightning harm to foes equal to half your proficiency bonus.",
+        "children": [
+          {
+            "name": "D3 Josh Mosqueira rift guardian",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Empathic Prediction",
+        "description": "Whenever a creature makes an attack against you that you have observed before (whether from that creature or another), you can use your reaction to replace your relevant defence with your Insight bonus for that attack.",
+        "children": [
+          {
+            "name": "Cypher Empathic descriptor",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Charm",
+    "description": "+1 Charisma",
+    "children": [
+      {
+        "name": "Supple Face",
+        "description": "Whenever you complete a long rest, you can change your physical characteristics from your neck up until the end of your next long rest. You can make any changes you desire, so long as your features still resemble a humanoid's.",
+        "children": [
+          {
+            "name": "Man Behind the Face",
+            "description": "Whenever you change your physical characteristics with Supple Face, you gain 1 affix with a maximum point value of -10 and another affix with a minimum point value of 10. This lasts until the changes revert.",
+            "children": [
+              {
+                "name": "Influence Personality",
+                "description": "You can choose the Affinity for each affix granted to you by Man Behind the Face.",
+                "children": []
+              },
+              {
+                "name": "Versatile Personality",
+                "description": "You roll each affix granted to you by Man Behind the Face with advantage.",
+                "children": []
+              },
+              {
+                "name": "Mitigated Impact",
+                "description": "The first affix granted to you by Man Behind the Face instead has a maximum point value of -5, and the second has a minimum point value of 7.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Blackout",
+            "description": "Whenever you finish a long rest after a waking period during which you gained experience and had your physical characteristics modified by Supple Face, you awaken with 1 additional fatigue which lasts until you take a long rest. Additionally, roll a d6 to determine what you find in your pocket: 1. someone else's blood (you gain an additional level of fatigue or strife until long rest, chosen randomly); 2. missing coins (lose 2d20 gold); 3. a Very Clean Tooth (no effect); 4. extra coins (gain 2d20 gold); 5. unexpected treasures (gain a random loot result that you are not specialised in); 6. note in someone else's handwriting (ask the DM a yes/no question, it has an 80% chance of being true)",
+            "children": [
+              {
+                "name": "Influence Mystery",
+                "description": "You make your Blackout roll with advantage.",
+                "children": []
+              },
+              {
+                "name": "Embrace Fugue",
+                "description": "Each roll result of Blackout is improved: 1. Your party gains 1 experience; 2. The gold lost becomes 2d12; 3. You gain +1 to tooth-related d20 rolls for each Very Clean Tooth in your posession; 4. The gold gained becomes 4d12; 5. The loot is green; 6. The answer has a 95% chance to be true.",
+                "children": []
+              },
+              {
+                "name": "Lingering Mania",
+                "description": "Each roll result of Blackout grants you an additional bonus until your next long rest: 1. You have +1 AB; 2. You gain resistance equal to your proficiency bonus; 3. Your bite deals additional damage equal to your proficiency bonus; 4. You gain gold find equal to your level; 5. Whenever you find an enchanted item, it has a 50% chance to become a loot roll instead; 6. You have +1 to all ability checks.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Thousandfold Visage",
+            "description": "Whenever you change your physical characteristics with Supple Face, you may choose to manifest an additional illusory overlay that projects a semi-transparent mask onto your face which flickers through dozens of expressions and emotional states. The overlay is visible to all creatures within 10' of you and lasts until your next long rest. Whenever your party makes a Group Persuasion check against a creature who can see the overlay, it has an 80% chance to gain a +3 bonus and a 20% chance to gain a -3 bonus.",
+            "children": [
+              {
+                "name": "Echoes of Another",
+                "description": "Once per long rest, you can ask your Thousandfold Visage a question about a creature in your line of sight by rolling a d6 and receiving its answer in your own voice: 1-2. The Visage mutters nonsense; 3-4. You learn the creature's current emotional state; 5. You learn the creature's Charisma score; 6. You learn whether or not the creature has lied in the past minute.",
+                "children": []
+              },
+              {
+                "name": "Mask of Many Hungers",
+                "description": "Whenever you activate your Thousandfold Visage, choose one Hunger for it to have: Attention, Fear, or Admiration. Whenever you or your party in a group check makes a Charisma check that aligns with the Hunger against a creature who can see the overlay, the check gains a +2 bonus.",
+                "children": []
+              },
+              {
+                "name": "Borrowed Faces",
+                "description": "After interacting with a creature for 10+ minutes, you can record its face. Whenever you activate your Thousandfold Visage, you can choose its shifting overlay to appear as one of your recorded faces. Once per long rest, you or your party in a group check can make a Charisma check with advantage against a creature who knows the overlayed face, due to their subtle confusion.",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ooze Familiar",
+        "description": "This boon occupies your concentration. You emit a 5' persistent zone around you that causes minion acid harm to foes equal to your level.",
+        "children": [
+          {
+            "name": "Spreading Slime",
+            "description": "Your melee attacks against creatures within your Ooze Familiar's zone splash an amount of damage equal to your bonus minion damage.",
+            "children": [
+              {
+                "name": "Potent Slime",
+                "description": "Your Spreading Slime splashes additional damage equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Distant Spread",
+                "description": "Your Spreading Slime's splash radius increases to 10'.",
+                "children": []
+              },
+              {
+                "name": "Slime Shots",
+                "description": "Your Spreading Slime no longer requires your attack's target to be within your Ooze Familiar's zone, and can trigger off of any non-area attack, but its base splash amount is now equal to half your bonus minion damage.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Extra Ooze",
+            "description": "Your Ooze Familiar's zone radius increases to 10' and its harm is increased by an amount equal to your proficiency bonus.",
+            "children": [
+              {
+                "name": "Massive Ooze",
+                "description": "Your Ooze Familiar's zone radius increases to 15'.",
+                "children": []
+              },
+              {
+                "name": "Potent Ooze",
+                "description": "Your Ooze Familiar's harm increases by an amount equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Jumping Ooze",
+                "description": "Whenever you roll for initiative, you choose which member of your party your Ooze Familiar attaches to.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Isaac Demon Baby (box of friends syn)",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Likeability",
+        "description": "You can define an important contact that you have who is in an influential position, such as a minor celebrity, a police captain, or the editor of a newspaper.",
+        "children": [
+          {
+            "name": "TMA Likeable descriptor",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

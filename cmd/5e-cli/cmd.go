@@ -309,6 +309,41 @@ var augment = func(req Request) (ViewModel, error) {
 	}, nil
 }
 
+var riverviewBoon = func(req Request) (ViewModel, error) {
+	root := req.str("rootNode")
+
+	boons, err := fetchData("riverviewBoon", []Boon{})
+	if err != nil {
+		return ViewModel{}, err
+	}
+
+	var options []Boon
+	if root == "root" {
+		options = boons
+	} else {
+		rootNode := findBoonNode(root, boons)
+		if rootNode != nil {
+			options = rootNode.Children
+		} else {
+			return ViewModel{}, fmt.Errorf("Couldn't find root node %s", root)
+		}
+	}
+
+	sections := []Section{}
+	for idx, o := range options {
+		items := []Item{}
+		for _, c := range o.Children {
+			items = append(items, Item{Title: c.Name, Body: c.Description})
+		}
+		sections = append(sections, Section{Heading: fmt.Sprintf("Option %d: %s (%s)", idx+1, o.Name, o.Description)})
+	}
+
+	return ViewModel{
+		Title:    fmt.Sprintf("Boon options from '%s' node (and a preview of their children)", root),
+		Sections: sections,
+	}, nil
+}
+
 var mission = func(_ Request) (ViewModel, error) {
 	missions, err := fetchData("mission", []string{})
 	if err != nil {

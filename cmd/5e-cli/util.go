@@ -100,3 +100,16 @@ func dmgToDice(dmg float64) string {
 	}
 	return fmt.Sprintf("%dd%d", bestCount, bestFace)
 }
+
+func findBoonNode(name string, boons []Boon) *Boon {
+	for _, b := range boons {
+		if b.Name == name {
+			return &b
+		}
+		found := findBoonNode(name, b.Children)
+		if found != nil {
+			return found
+		}
+	}
+	return nil
+}

@@ -59,6 +59,7 @@ var COMMAND_MAP = map[string]CommandFunc{
 	"loot result":      lootResult,
 	"journey activity": journeyActivity,
 	"augment":          augment,
+	"boon": riverviewBoon,
 }
 
 func main() {

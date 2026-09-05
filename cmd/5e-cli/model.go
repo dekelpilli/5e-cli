@@ -57,3 +57,9 @@ type Augments struct {
 	Arthur    []Augment `json:"Arthur"`
 	Nathaniel []Augment `json:"Nathaniel"`
 }
+
+type Boon struct {
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Children    []Boon `json:"children"`
+}

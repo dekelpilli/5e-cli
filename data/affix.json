@@ -24,7 +24,7 @@
         "affinities": ["utility"]
     },
     {
-        "description": "you may use yor $ability for $skill checks",
+        "description": "you may use your $ability for $skill checks",
         "pointValue": "3",
         "upgrade": "+1 to the ability/2",
         "affinities": ["utility"]

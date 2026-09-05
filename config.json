@@ -181,6 +181,25 @@
     },
     {
       "type": "cli",
+      "id": "boon",
+      "label": "Riverview Boon",
+      "inputs": [
+        {
+          "id": "rootNode",
+          "label": "Root Node",
+          "type": "string",
+          "default": "root"
+        }
+      ],
+      "command": [
+        "./5e-cli",
+        "-data",
+        "data",
+        "boon"
+      ]
+    },
+    {
+      "type": "cli",
       "id": "glyph",
       "label": "Glyph",
       "command": [
