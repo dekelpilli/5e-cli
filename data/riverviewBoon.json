@@ -8,9 +8,67 @@
         "description": "Once per combat, as a Riverview action, you can drop an ethereal copy of your main hand weapon in a space within 60 feet of you. The weapon remains there for 1 round, during which time its space and all spaces adjacent to it are a persistent zone, causing harm to foes of the weapon's base type equal to your level.",
         "children": [
           {
-            "name": "DI Falling Sword skill",
-            "description": "",
-            "children": []
+            "name": "Retrieve Weapon",
+            "description": "Once per combat, as a Riverview action, you can teleport to your Falling Arsenal's ethereal weapon, removing it and immediately causing harm to foes adjacent to you of the weapon's base type equal to your level.",
+            "children": [
+              {
+                "name": "Remote Retrieval",
+                "description": "When you use your Retrieve Weapon, you can instead teleport to any space within 60 feet of you, but Retrieve Weapon's harm affects foes between you and the ethereal weapon instead of those adjacent to you.",
+                "children": []
+              },
+              {
+                "name": "Lethal Retrieval",
+                "description": "Your Retrieve Weapon's harm increases by an amount equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Weapon Eruption",
+                "description": "Instead of removing the ethereal weapon when you use Retrieve Weapon, you extend its duration by 1 round.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Skull Cracker",
+            "description": "When you use your Falling Arsenal, you attach the Sigil of the Arsenal to you and any minions adjacent to you for 1 round. Creatures with your Sigil of the Arsenal radiate a 5' persistent zone that causes harm to foes of the weapon's base type equal to your level.",
+            "children": [
+              {
+                "name": "Refreshing Sigil",
+                "description": "1/combat, when your Sigil of the Arsenal causes harm, you refresh the cooldown of your Falling Arsenal.",
+                "children": []
+              },
+              {
+                "name": "Lethal Sigil",
+                "description": "Harm caused by your Sigil of the Arsenal is increased by an amount equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Shared Sigil",
+                "description": "The attachment range of your Skull Cracker increases to 30 feet.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Strength Ascendant",
+            "description": "Whenever you use a Riverview action on Falling Arsenal or any of its descendant nodes, you deal additional damage for 1 round equal to your proficiency bonus.",
+            "children": [
+              {
+                "name": "Cruelty Ascendant",
+                "description": "The damage bonus from your Strength Ascendant also applies to your outgoing harm.",
+                "children": []
+              },
+              {
+                "name": "Potent Strength",
+                "description": "The damage bonus from your Strength Ascendant increases by an amount equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Xiloan Overexertion",
+                "description": "While you have the damage bonus from your Strength Ascendant, you may increase any rolled damage dice to their maximum value. Whenever you do so, you suffer psychic harm equal to half the total amount they were increased by.",
+                "children": []
+              }
+            ]
           }
         ]
       },
