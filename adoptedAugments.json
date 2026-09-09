@@ -10,7 +10,7 @@
     {
       "type": "generated",
       "name": "Extensive Care",
-      "description": "Whenever you roll for initiative, your Monstrous Minion is healed for a number of hit points equal to your Intelligence modifier times your proficiency bonus."
+      "description": "Whenever you heal a creature with a levelled spell, your Monstrous Minion is also healed an amount equal to double the spell's level plus your Intelligence modifier. This counts as a separate instance of healing."
     }
   ],
   "Arthur": [

@@ -444,12 +444,6 @@
         "affinities": ["offence"]
     },
     {
-        "description": "on hit, heal 1 HP",
-        "pointValue": "1",
-        "upgrade": "+1/1",
-        "affinities": ["survivability"]
-    },
-    {
         "description": "+1 damage while shapeshifted",
         "pointValue": "1",
         "upgrade": "+1/1",
@@ -594,12 +588,6 @@
         "affinities": ["offence"]
     },
     {
-        "description": "on killing blow, heal 4 HP",
-        "pointValue": "1",
-        "upgrade": "+4/1",
-        "affinities": ["survivability"]
-    },
-    {
         "description": "+2 damage with reactions",
         "pointValue": "2",
         "upgrade": "+1/1",
@@ -648,12 +636,6 @@
         "affinities": ["survivability"]
     },
     {
-        "description": "+1 passive regeneration",
-        "pointValue": "2",
-        "upgrade": "+1/2",
-        "affinities": ["survivability"]
-    },
-    {
         "description": "the effects of the Block action last 1 additional round",
         "pointValue": "3",
         "upgrade": "+1/3",
@@ -694,12 +676,6 @@
         "pointValue": "1",
         "upgrade": "+2/1",
         "affinities": ["offence"]
-    },
-    {
-        "description": "when hit, heal 3 HP",
-        "pointValue": "1",
-        "upgrade": "+2/1",
-        "affinities": ["survivability"]
     },
     {
         "description": "when hit, attacker becomes $condition for 1 round",
@@ -754,18 +730,6 @@
         "pointValue": "1",
         "upgrade": "-1/1",
         "affinities": ["support", "survivability"]
-    },
-    {
-        "description": "on initiative roll, heal 4 HP",
-        "pointValue": "1",
-        "upgrade": "+4/1",
-        "affinities": ["survivability"]
-    },
-    {
-        "description": "at the end of each combat, heal 4 HP",
-        "pointValue": "1",
-        "upgrade": "+4/1",
-        "affinities": ["survivability"]
     },
     {
         "description": "+2 healing from hit dice",

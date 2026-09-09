@@ -40,9 +40,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "5. 1/combat, on melee hit, heal 4 HP",
+                "description": "5. 1/SR, on melee hit, heal 5 HP",
                 "pointValue": "1",
-                "upgrade": "+4/1"
+                "upgrade": "+5/1"
             },
             {
                 "description": "6. +1 melee damage if you have made a melee attack since the start of your last turn",
@@ -238,9 +238,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "3. on killing blow, heal 4 HP",
+                "description": "3. 1/SR, on killing blow, heal 8 HP",
                 "pointValue": "1",
-                "upgrade": "+4/1"
+                "upgrade": "+8/1"
             },
             {
                 "description": "4. on healing another creature that is above 0 HP, gain +2 outgoing poison harm for 1 round",
@@ -404,7 +404,7 @@
                 "upgrade": "+1/4"
             },
             {
-                "description": "5. after being hit while you have no strife, heal 3 HP",
+                "description": "5. 1/SR, after being hit while you have no strife, heal 7 HP",
                 "pointValue": "1",
                 "upgrade": "+2/1"
             },
@@ -436,9 +436,9 @@
         ],
         "thematicAffixes": [
             {
-                "description": "1. on hit, heal 1 HP",
+                "description": "1. 1/SR, on hit, heal 5 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+5/1"
             },
             {
                 "description": "2. your weapon attacks deal +1d4 fire damage",
@@ -446,7 +446,7 @@
                 "upgrade": "+1 die size/1"
             },
             {
-                "description": "3. +1 passive regeneration",
+                "description": "3. +1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
@@ -852,7 +852,7 @@
         ],
         "thematicAffixes": [
             {
-                "description": "1. +1 passive regeneration",
+                "description": "1. +1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
@@ -872,9 +872,9 @@
                 "upgrade": "+1 die size/1"
             },
             {
-                "description": "5. on dealing necrotic damage, heal 1 HP",
+                "description": "5. 1/SR, on dealing necrotic damage, heal 5 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+5/1"
             },
             {
                 "description": "6. while adjacent to an ally, your melee hits give the target -5' speed for 1 round",
@@ -887,7 +887,7 @@
         "name": "Deadbolter",
         "startingAffixes": [
             {
-                "description": "+1 passive regeneration",
+                "description": "+1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
@@ -1008,9 +1008,9 @@
         ],
         "thematicAffixes": [
             {
-                "description": "1. at the end of each combat, recover 4 HP",
+                "description": "1. 1/SR, at the end of combat, heal 8 HP",
                 "pointValue": "1",
-                "upgrade": "+4/1"
+                "upgrade": "+8/1"
             },
             {
                 "description": "2. 1/LR, on short rest, recover 4 spell slot levels",
@@ -1023,7 +1023,7 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "4. +1 incoming healing from non-limited sources",
+                "description": "4. +2 incoming healing from non-magical sources",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             },
@@ -1053,7 +1053,7 @@
                 "upgrade": "+4/1"
             },
             {
-                "description": "+1 passive regeneration",
+                "description": "+1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             }
@@ -1070,12 +1070,12 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "3. when hit, heal 3 HP if you are above 0 HP",
+                "description": "3. 1/SR, when hit, heal 7 HP",
                 "pointValue": "1",
-                "upgrade": "+2/1"
+                "upgrade": "+7/1"
             },
             {
-                "description": "4. +1 passive regen while bloodied",
+                "description": "4. +1 resistance while bloodied",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             },
@@ -1085,9 +1085,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "6. whenever a damaging attack fails to hit you, heal 3 HP",
+                "description": "6. 1/SR, when a damaging attack fails to hit you, heal 7 HP",
                 "pointValue": "1",
-                "upgrade": "+2/1"
+                "upgrade": "+7/1"
             }
         ]
     },
@@ -1397,9 +1397,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "6. on hit, heal 1 HP",
+                "description": "6. 1/SR, on hit, heal 5 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+5/1"
             }
         ]
     },
@@ -1548,9 +1548,9 @@
                 "upgrade": "+1/2"
             },
             {
-                "description": "5. on boss hit, heal 3 HP",
+                "description": "5. 1/SR, on boss hit, heal 7 HP",
                 "pointValue": "1",
-                "upgrade": "+2/1"
+                "upgrade": "+7/1"
             },
             {
                 "description": "6. +1 perception",
@@ -1798,9 +1798,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "3. +1 passive regeneration",
-                "pointValue": "3",
-                "upgrade": "+1 die size/1"
+                "description": "3. +1 resistance",
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "4. +3 critical damage bonus",
@@ -2041,9 +2041,9 @@
                 "upgrade": "+1 multiplier/2"
             },
             {
-                "description": "on hit with your first melee attack each combat, heal 4 HP",
+                "description": "on hit with your first melee attack each combat, gain 1 resistance for the remainder of combat",
                 "pointValue": "1",
-                "upgrade": "+4/1"
+                "upgrade": "+1/1"
             }
         ],
         "thematicAffixes": [
@@ -2635,14 +2635,14 @@
                 "upgrade": "+1/2"
             },
             {
-                "description": "4. on using a non-attack standard action power, heal 1 HP",
+                "description": "4. 1/SR, on using a non-attack standard action power, heal 5 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+5/1"
             },
             {
-                "description": "5. on using a non-attack standard action power while bloodied, heal 2 HP",
+                "description": "5. 1/SR, on using a non-attack standard action power while bloodied, heal 6 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+6/1"
             },
             {
                 "description": "6. on using a non-attack standard action power, all adjacent foes gain -1 damage for 1 round",
@@ -2683,13 +2683,13 @@
             },
             {
                 "description": "3. +1 fire absorption",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "4. +1 lightning absorption",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "5. +1 resistance vs armour attacks",
@@ -2746,7 +2746,7 @@
             {
                 "description": "5. as a reaction at the end of your turn, you may end one Speed-impairing effect on you",
                 "pointValue": "3",
-                "upgrade": "whenever you do so, heal +4 HP/1"
+                "upgrade": "whenever you do so, gain 1 resistance for the remainder of combat/1"
             },
             {
                 "description": "6. as an action, you can spend 1 exertion to cast the Inflict Wounds spell. When cast in this way, Inflict Wounds' attack counts as a weapon attack.",
@@ -2873,7 +2873,7 @@
                 "upgrade": "-1 and 5pts distributed/1"
             },
             {
-                "description": "+3 passive regeneration",
+                "description": "+3 resistance",
                 "pointValue": "6",
                 "upgrade": "+1/2"
             }
@@ -2881,8 +2881,8 @@
         "thematicAffixes": [
             {
                 "description": "1. +1 fire absorption",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "2. you lose maximum HP equal to your level; 4pts distributed",
@@ -2925,9 +2925,9 @@
                 "upgrade": "+1 slot OR +1 level/3"
             },
             {
-                "description": "gain passive temporary HP generation equal to your bonus passive regeneration",
+                "description": "gain incoming temporary HP equal to your bonus incoming healing",
                 "pointValue": "1",
-                "upgrade": "+1 passive regeneration/2"
+                "upgrade": "+1 incoming healing/1"
             }
         ],
         "thematicAffixes": [
@@ -2942,9 +2942,9 @@
                 "upgrade": "+1 die size/1"
             },
             {
-                "description": "3. +1 passive temporary HP generation",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "description": "3. +1 resistance",
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "4. on killing blow, summon a Relic of Strife (requires concentration), a CR 1/4 construct minion that cannot attack. When it dies, it explodes, causing its melee attack's damage as psychic harm to all foes adjacent to it",
@@ -3109,8 +3109,8 @@
             },
             {
                 "description": "5. +1 poison absorption",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "6. +2 incoming temporary HP",
@@ -3497,8 +3497,8 @@
                 "upgrade": "+1/4"
             },
             {
-                "description": "1/combat, as a bonus action, you can remove a condition from an ally within 30' of you",
-                "pointValue": "1",
+                "description": "1/SR, as a bonus action, you can remove a condition from all ally within 30' of you",
+                "pointValue": "4",
                 "upgrade": "they are also healed +5 HP/1"
             }
         ],
@@ -3799,7 +3799,7 @@
         "name": "Restorative Locket",
         "startingAffixes": [
             {
-                "description": "while concentrating, you have +1 passive regeneration",
+                "description": "while concentrating, you have +2 non-physical resistance",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             },
@@ -3862,7 +3862,7 @@
                 "upgrade": "+1/2"
             },
             {
-                "description": "on initiative, recover 2 exertion",
+                "description": "on initiative, er 2 exertion",
                 "pointValue": "3",
                 "upgrade": "+1/1"
             }
@@ -3958,7 +3958,7 @@
         "name": "Call of the Tundra",
         "startingAffixes": [
             {
-                "description": "+1 passive regeneration",
+                "description": "+1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
@@ -4001,9 +4001,9 @@
                 "upgrade": "+4/1"
             },
             {
-                "description": "6. whenever you stagger a creature, recover 2 HP",
+                "description": "6. 1/SR, when you stagger a creature, recover 6 HP",
                 "pointValue": "1",
-                "upgrade": "+1/1"
+                "upgrade": "+6/1"
             }
         ]
     },
@@ -4103,8 +4103,8 @@
             },
             {
                 "description": "5. +1 necrotic absorption",
-                "pointValue": "1",
-                "upgrade": "+1/1"
+                "pointValue": "2",
+                "upgrade": "+1/2"
             },
             {
                 "description": "6. +1 damage with trap weapons",
@@ -4213,9 +4213,9 @@
                 "upgrade": "+1/1"
             },
             {
-                "description": "6. after the third time each combat you or allies within 60' of you are healed by passive regeneration, recover 1 spell slot level",
-                "pointValue": "2",
-                "upgrade": "+1/2"
+                "description": "6. after the third time each combat you or allies within 60' of you are hit, recover 3 spell slot levels",
+                "pointValue": "3",
+                "upgrade": "+1/1"
             }
         ]
     },
@@ -4294,7 +4294,7 @@
         ],
         "thematicAffixes": [
             {
-                "description": "1. +1 passive regeneration",
+                "description": "1. +1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
@@ -4329,12 +4329,12 @@
         "name": "Shell of Tarrasque",
         "startingAffixes": [
             {
-                "description": "+1 passive regeneration",
+                "description": "+1 resistance",
                 "pointValue": "2",
                 "upgrade": "+1/2"
             },
             {
-                "description": "gain passive regeneration equal to a quarter of your bonus maximum HP",
+                "description": "gain resistance equal to a quarter of your bonus maximum HP",
                 "pointValue": "4",
                 "upgrade": "+4 maximum HP/1"
             },
@@ -4824,9 +4824,9 @@
         ],
         "thematicAffixes": [
             {
-                "description": "1. on killing blow, heal 4 HP",
+                "description": "1. 1/SR, on killing blow, heal 8 HP",
                 "pointValue": "1",
-                "upgrade": "+4/1"
+                "upgrade": "+8/1"
             },
             {
                 "description": "2. +1d4 bludgeoning damage to your weapon attacks",
@@ -4859,7 +4859,7 @@
         "name": "Soulwrest",
         "startingAffixes": [
             {
-                "description": "if you've consumed a corpse since the start of your last turn, adjacent allies have +2 passive regeneration",
+                "description": "if you've consumed a corpse since the start of your last turn, adjacent allies have +2 resistance",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             },
@@ -4882,7 +4882,7 @@
                 "upgrade": "+1 die size/1"
             },
             {
-                "description": "2. if you've consumed a corpse since the start of your last turn, +2 passive regeneration",
+                "description": "2. if you've consumed a corpse since the start of your last turn, +2 resistance",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             },
@@ -5283,9 +5283,9 @@
         "name": "Red Cloak of the Island",
         "startingAffixes": [
             {
-                "description": "+1 passive regeneration",
-                "pointValue": "2",
-                "upgrade": "+1/2"
+                "description": "+1 physical resistance",
+                "pointValue": "1",
+                "upgrade": "+1/1"
             },
             {
                 "description": "if you have 55+ total ability scores, +1 resistance",

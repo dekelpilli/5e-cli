@@ -305,11 +305,6 @@
         "description": "The first time you use the power each combat, it occurs one additional time for each turn you have had this combat in which you did not use the power. The additional occurences deal slightly less damage."
     },
     {
-        "name": "Empowered Recovery",
-        "target": "powers with a non-instantaneous duration",
-        "description": "While the power's duration is active, you gain a slight amount of passive regeneration."
-    },
-    {
         "name": "Splashing",
         "target": "powers that hit",
         "description": "The power splashes damage on hit."
@@ -363,11 +358,6 @@
         "name": "Exposure",
         "target": "powers that deal $dmgType damage",
         "description": "The power ignores {type} resistance."
-    },
-    {
-        "name": "Rejuvenating Creations",
-        "target": "powers that create objects or structures",
-        "description": "You and allies adjacent to objects or structures created by the power gain a slight amount of passive regeneration."
     },
     {
         "name": "Unstable Decay",

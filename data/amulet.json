@@ -207,8 +207,8 @@
   {
     "name": "Kher'evo's Hunger",
     "base": {
-      "description": "on killing blow, gain 2 Supply",
-      "upgrade": "+2"
+      "description": "on killing blow, gain 8 Supply",
+      "upgrade": "+8"
     },
     "upgrades": [
       {
@@ -224,8 +224,8 @@
         "upgrade": "+8"
       },
       {
-        "description": "4. on hit, heal 2 HP",
-        "upgrade": "+2"
+        "description": "4. 1/SR, on hit, heal 10 HP",
+        "upgrade": "+10"
       },
       {
         "description": "5. your damaging attacks deal +1d4 acid damage",
@@ -249,7 +249,7 @@
     "name": "Somnius' Aspiration",
     "base": {
       "description": "whenever a movement-impairing condition is applied to you, make a save, ignoring the condition on a success",
-      "upgrade": "whenever you pass this save, heal +4 HP"
+      "upgrade": "+1 to this save"
     },
     "upgrades": [
       {
@@ -404,8 +404,8 @@
         "upgrade": "+2"
       },
       {
-        "description": "8. +5 to the healing you receive from absorption",
-        "upgrade": "+4"
+        "description": "8. +2 to the resistance bonus from absorption",
+        "upgrade": "+2"
       }
     ]
   },
@@ -601,8 +601,8 @@
         "upgrade": "+1"
       },
       {
-        "description": "6. +2 necrotic absorption",
-        "upgrade": "+2"
+        "description": "6. +1 necrotic absorption",
+        "upgrade": "+1"
       },
       {
         "description": "7. whenever you go down, +2 resistance for the remainder of combat",
@@ -671,8 +671,8 @@
         "upgrade": "+2"
       },
       {
-        "description": "3. +1 passive regen",
-        "upgrade": "+1"
+        "description": "3. +2 melee resistance",
+        "upgrade": "+2"
       },
       {
         "description": "4. +2 damage while bloodied",
@@ -691,8 +691,8 @@
         "upgrade": "+4"
       },
       {
-        "description": "8. on hit, heal 2 HP",
-        "upgrade": "+2"
+        "description": "8. 1/SR, on hit, heal 10 HP",
+        "upgrade": "+10"
       }
     ]
   },
@@ -724,8 +724,8 @@
         "upgrade": "+1 damage"
       },
       {
-        "description": "6. +2 lightning absorption",
-        "upgrade": "+2"
+        "description": "6. +1 lightning absorption",
+        "upgrade": "+1"
       },
       {
         "description": "7. +5 ranged damage in darkness",
@@ -1360,7 +1360,7 @@
     },
     "upgrades": [
       {
-        "description": "1. allies affected by your powers have +1 passive regeneration",
+        "description": "1. allies affected by your powers have +1 physical resistance",
         "upgrade": "+1"
       },
       {
@@ -1388,8 +1388,8 @@
         "upgrade": "+2"
       },
       {
-        "description": "8. allies affected by your powers have +2 passive temporary HP generation",
-        "upgrade": "+2"
+        "description": "8. allies affected by your powers have +1 non-physical resistance",
+        "upgrade": "+1"
       }
     ]
   },
@@ -1544,7 +1544,7 @@
         "upgrade": "+2 die sizes"
       },
       {
-        "description": "6. +1 passive regeneration",
+        "description": "6. +1 resistance",
         "upgrade": "+1"
       },
       {
@@ -1770,7 +1770,7 @@
     },
     "upgrades": [
       {
-        "description": "1. +1 passive regeneration",
+        "description": "1. +1 resistance",
         "upgrade": "+1"
       },
       {
@@ -1778,7 +1778,7 @@
         "upgrade": "+8"
       },
       {
-        "description": "3. +2 passive regeneration while bloodied",
+        "description": "3. +3 non-physical resistance while bloodied",
         "upgrade": "+2"
       },
       {
@@ -1819,8 +1819,8 @@
         "upgrade": "+2"
       },
       {
-        "description": "3. upon hurting a creature with your reaction, heal 5 HP",
-        "upgrade": "+4"
+        "description": "3. 1/SR, upon hurting a creature with your reaction, heal 14 HP",
+        "upgrade": "+14"
       },
       {
         "description": "4. +1 necrotic damage and +1 outgoing necrotic harm",
@@ -2216,8 +2216,8 @@
   {
     "name": "Shahir's Revenge",
     "base": {
-      "description": "on hit, heal 1 HP and gain 2 temporary HP",
-      "upgrade": "+1 and +1"
+      "description": "1/SR, on hit, heal 5 HP and gain 6 temporary HP",
+      "upgrade": "+5 and +6"
     },
     "upgrades": [
       {
@@ -2229,8 +2229,8 @@
         "upgrade": "+2"
       },
       {
-        "description": "3. on critical success, heal 2 HP and gain 3 temporary HP",
-        "upgrade": "+2 and +2"
+        "description": "3. 1/SR, on critical success, heal 7 HP and gain 8 temporary HP",
+        "upgrade": "+7 and +8"
       },
       {
         "description": "4. 1/combat, as a bonus action, you can take the Help action",

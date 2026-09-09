@@ -8,9 +8,9 @@
   ],
   "Viktor": [
     {
-      "description": "on initiative roll, your Monstrous Minion heals 6 HP",
+      "description": "During the first round of combat, your Monstrous Minion has +5 resistance.",
       "pointValue": "1",
-      "upgrade": "+6/1"
+      "upgrade": "+5/1"
     }
   ],
   "Arthur (sneak attack)": [
