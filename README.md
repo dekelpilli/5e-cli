@@ -142,6 +142,14 @@ Augment after the first 'event' of sessions 8, 14, 20 (3 total)
 
 - Buff suggested base stats of low level enemies
 
+## Party
+
+Crystal flare chance = 7 + rank*3, plus each character's own bonuses (`data/party.json`):
+Quincy +2% at rank 1 (+15%), Viktor +2% at rank 1, Arthur +1% at rank 3 (+15%), Nathaniel +4% at rank 3.
+
+Random vocabularies (`$placeholder` in `data/`) are drawn by the companion from
+`randoms` in `config.json`, not by this CLI.
+
 ## Feats
 Quincy - Sharpshooter, Medium Armour Master
 Viktor - Warlord, Decayer

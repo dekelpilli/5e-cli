@@ -1,0 +1,10 @@
+{
+  "specialisationsTaken": ["S4", "S9"],
+  "members": [
+    {"name": "Quincy", "player": true, "flareChance": 27, "insight": 6, "specialisations": ["shrine", "shrine", "crystal", "crystal"]},
+    {"name": "Viktor", "player": true, "flareChance": 12, "insight": 1, "specialisations": ["relic", "misc"]},
+    {"name": "Arthur", "player": true, "flareChance": 32, "insight": 3, "specialisations": ["misc", "crystal"]},
+    {"name": "Nathaniel", "player": true, "flareChance": 20, "insight": 1, "specialisations": ["misc", "misc"]},
+    {"name": "Sidekick", "insight": 2}
+  ]
+}

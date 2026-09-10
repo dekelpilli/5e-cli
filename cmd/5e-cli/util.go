@@ -7,6 +7,8 @@ import (
 	"math/rand"
 	"os"
 	"path/filepath"
+	"slices"
+	"strings"
 )
 
 // DATA_DIR is the default directory name holding the JSON data files.
@@ -41,6 +43,44 @@ func generateWeather() (string, error) {
 		return "", err
 	}
 	return randSelect(weathers), nil
+}
+
+// fetchParty reads the roster, with members sorted by name so every listing of
+// the party comes out in the same order.
+func fetchParty() (Party, error) {
+	party, err := fetchData("party", Party{})
+	if err != nil {
+		return party, err
+	}
+	slices.SortFunc(party.Members, func(a, b PartyMember) int { return strings.Compare(a.Name, b.Name) })
+	return party, nil
+}
+
+// players are the roster entries with a character in the party: the ones who
+// roll for loot, travel activities, dreams and crystal flares.
+func (p Party) players() []PartyMember {
+	var players []PartyMember
+	for _, m := range p.Members {
+		if m.Player {
+			players = append(players, m)
+		}
+	}
+	return players
+}
+
+// player looks up a party member by name, or picks one at random when `name` is
+// empty (how a command with a blank character input chooses one).
+func (p Party) player(name string) (PartyMember, error) {
+	players := p.players()
+	if name == "" {
+		return randSelect(players), nil
+	}
+	for _, m := range players {
+		if m.Name == name {
+			return m, nil
+		}
+	}
+	return PartyMember{}, fmt.Errorf("invalid party member %q", name)
 }
 
 func fetchDreamPool(char string) ([]Affix, error) {

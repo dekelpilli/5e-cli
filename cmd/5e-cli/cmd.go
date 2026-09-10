@@ -14,15 +14,18 @@ var carnival = func(_ Request) (ViewModel, error) {
 	if err != nil {
 		return ViewModel{}, err
 	}
-	return vmText("Carnival game!", processString(randSelect(allGames))), nil
+	return vmText("Carnival game!", randSelect(allGames)), nil
 }
 
 var colour = func(req Request) (ViewModel, error) {
-	target := req.str("type")
-	desc, ok := COLOUR_UPGRADE_DESCRIPTIONS[target]
+	descriptions, err := fetchData("colourUpgrade", map[string]string{})
+	if err != nil {
+		return ViewModel{}, err
+	}
+	desc, ok := descriptions[req.str("type")]
 	if !ok {
 		return ViewModel{}, fmt.Errorf("input %q must be a loot type: one of %s",
-			"type", strings.Join(sortedKeys(COLOUR_UPGRADE_DESCRIPTIONS), ", "))
+			"type", strings.Join(sortedKeys(descriptions), ", "))
 	}
 	return vmText("Colour upgrade", desc), nil
 }
@@ -44,11 +47,6 @@ var targetAffix = func(req Request) (ViewModel, error) {
 	affinities := req.strs("affinities")
 	if len(affinities) == 0 {
 		return ViewModel{}, fmt.Errorf("input %q is required", "affinities")
-	}
-	for _, a := range affinities {
-		if !slices.Contains(AFFINITIES, a) {
-			return ViewModel{}, fmt.Errorf("invalid affinity %q", a)
-		}
 	}
 	chosenAffinity := randSelect(affinities)
 
@@ -86,7 +84,7 @@ var mutate = func(_ Request) (ViewModel, error) {
 	return ViewModel{
 		Title:    fmt.Sprintf("Mutation of %s", chosen.Name),
 		Subtitle: fmt.Sprintf("Can be applied to %s", chosen.Target),
-		Sections: sectionOf(Item{Body: processString(chosen.Description)}),
+		Sections: sectionOf(newItem(chosen.Description)),
 	}, nil
 }
 
@@ -97,17 +95,16 @@ var insight = func(req Request) (ViewModel, error) {
 	}
 	socialCheck := rand.Intn(20) + int(socialBonus)
 
-	players := make([]string, 0, len(INSIGHTS))
-	for p := range INSIGHTS {
-		players = append(players, p)
+	party, err := fetchParty()
+	if err != nil {
+		return ViewModel{}, err
 	}
-	sort.Strings(players)
 
-	items := make([]Item, 0, len(players))
-	for _, p := range players {
+	items := make([]Item, 0, len(party.Members))
+	for _, p := range party.Members {
 		results := make([]string, 2)
 		for i := range results {
-			insightCheck := rand.Intn(20) + INSIGHTS[p]
+			insightCheck := rand.Intn(20) + p.Insight
 			switch {
 			case insightCheck > socialCheck+2:
 				results[i] = "succeeds"
@@ -118,7 +115,7 @@ var insight = func(req Request) (ViewModel, error) {
 			}
 		}
 		items = append(items, Item{
-			Title: p,
+			Title: p.Name,
 			Body:  fmt.Sprintf("%s (or %s with reroll)", results[0], results[1]),
 		})
 	}
@@ -151,7 +148,7 @@ var chaos = func(_ Request) (ViewModel, error) {
 	}
 	mod := fmt.Sprintf("%s, cast [https://spies-and-spiders.github.io/spells.html#blankhash,flstschool:m=2] on %s",
 		randSelect(chaos.Trigger), randSelect(chaos.Target))
-	return vmText("Chaotic modifier", processString(mod)), nil
+	return vmText("Chaotic modifier", mod), nil
 }
 
 var PERK_CHANCE = 20
@@ -159,12 +156,17 @@ var CARNIVAL_CHANCE = 11
 var OTHERWORLDLY_CHANCE = 3
 
 var combat = func(_ Request) (ViewModel, error) {
+	party, err := fetchParty()
+	if err != nil {
+		return ViewModel{}, err
+	}
+
 	var flares []Item
 	for i := 1; i <= 10; i++ {
 		var flared []string
-		for _, char := range PARTY_MEMBERS {
-			if rand.Intn(100) < FLARE_CHANCES[char] {
-				flared = append(flared, char)
+		for _, char := range party.players() {
+			if rand.Intn(100) < char.FlareChance {
+				flared = append(flared, char.Name)
 			}
 		}
 		if len(flared) > 0 {
@@ -183,7 +185,7 @@ var combat = func(_ Request) (ViewModel, error) {
 		rewards = append(rewards, Item{Body: "Carnival ticket"})
 	}
 	if rand.Intn(100) < OTHERWORLDLY_CHANCE {
-		rewards = append(rewards, Item{Body: processString("Otherworldly gift ($inactiveDm)")})
+		rewards = append(rewards, newItem("Otherworldly gift ($inactiveDm)"))
 	}
 
 	var sections []Section
@@ -204,8 +206,11 @@ var HOSTILE_CHANCE = 0
 var POSITIVE_CHANCE = 0
 
 var travel = func(_ Request) (ViewModel, error) {
-	charSlice := make([]string, len(PARTY_MEMBERS))
-	copy(charSlice, PARTY_MEMBERS)
+	party, err := fetchParty()
+	if err != nil {
+		return ViewModel{}, err
+	}
+	charSlice := party.players()
 	rand.Shuffle(len(charSlice), func(i, j int) { charSlice[i], charSlice[j] = charSlice[j], charSlice[i] })
 
 	weather, err := generateWeather()
@@ -243,7 +248,7 @@ var travel = func(_ Request) (ViewModel, error) {
 			event++
 		}
 		if i < len(charSlice) {
-			items = append(items, Item{Body: fmt.Sprintf("%d. %s's activity", event, charSlice[i])})
+			items = append(items, Item{Body: fmt.Sprintf("%d. %s's activity", event, charSlice[i].Name)})
 			event++
 		}
 	}
@@ -255,11 +260,9 @@ var travel = func(_ Request) (ViewModel, error) {
 }
 
 var dream = func(req Request) (ViewModel, error) {
-	char := req.str("character")
-	if char == "" {
-		char = randSelect(PARTY_MEMBERS)
-	} else if !slices.Contains(PARTY_MEMBERS, char) {
-		return ViewModel{}, fmt.Errorf("invalid party member %q", char)
+	char, err := chosenPlayer(req)
+	if err != nil {
+		return ViewModel{}, err
 	}
 
 	pool, err := fetchDreamPool(char)
@@ -270,18 +273,29 @@ var dream = func(req Request) (ViewModel, error) {
 		return ViewModel{}, fmt.Errorf("no dream pool configured for %q", char)
 	}
 	mod := randSelect(pool)
+	item := newItem(mod.Description)
+	item.Metadata = []string{mod.PointValue, mod.Upgrade}
 	return ViewModel{
 		Title:    fmt.Sprintf("%s's dream", char),
-		Sections: sectionOf(Item{Body: processString(mod.Description), Metadata: []string{mod.PointValue, mod.Upgrade}}),
+		Sections: sectionOf(item),
 	}, nil
 }
 
+// chosenPlayer resolves a command's optional `character` input against the
+// roster, picking a random player when it is blank.
+func chosenPlayer(req Request) (string, error) {
+	party, err := fetchParty()
+	if err != nil {
+		return "", err
+	}
+	member, err := party.player(req.str("character"))
+	return member.Name, err
+}
+
 var augment = func(req Request) (ViewModel, error) {
-	char := req.str("character")
-	if char == "" {
-		char = randSelect(PARTY_MEMBERS)
-	} else if !slices.Contains(PARTY_MEMBERS, char) {
-		return ViewModel{}, fmt.Errorf("invalid party member %q", char)
+	char, err := chosenPlayer(req)
+	if err != nil {
+		return ViewModel{}, err
 	}
 
 	augments, err := fetchAugments(char)
@@ -417,7 +431,7 @@ var prize = func(_ Request) (ViewModel, error) {
 	if err != nil {
 		return ViewModel{}, err
 	}
-	return vmText("Prize", processString(randSelect(prizes))), nil
+	return vmText("Prize", randSelect(prizes)), nil
 }
 
 var tarot = func(req Request) (ViewModel, error) {
@@ -425,13 +439,13 @@ var tarot = func(req Request) (ViewModel, error) {
 	if card == "" {
 		return ViewModel{}, fmt.Errorf("input %q (the tarot card's name) is required", "card")
 	}
-	cardIdx := slices.IndexFunc(TAROT_CARDS, func(t string) bool { return strings.EqualFold(t, card) })
-	if cardIdx < 0 {
-		return ViewModel{}, fmt.Errorf("unknown tarot card %q", card)
-	}
 	cards, err := fetchData("tarot", []Generic{})
 	if err != nil {
 		return ViewModel{}, err
+	}
+	cardIdx := slices.IndexFunc(cards, func(c Generic) bool { return strings.EqualFold(c.Name, card) })
+	if cardIdx < 0 {
+		return ViewModel{}, fmt.Errorf("unknown tarot card %q", card)
 	}
 	c := cards[cardIdx]
 	return ViewModel{Title: "Tarot card", Sections: sectionOf(Item{Title: c.Name, Body: c.Description})}, nil
@@ -445,25 +459,26 @@ var relic = func(_ Request) (ViewModel, error) {
 	chosen := randSelect(relics)
 	items := make([]Item, 0, len(chosen.StartingAffixes))
 	for _, m := range chosen.StartingAffixes {
-		m.Description = processString(m.Description)
-		var modDescriptions = []string{fmt.Sprintf("[%s; %s]", m.PointValue, m.Upgrade)}
-		items = append(items, Item{Body: processString(m.Description), Metadata: modDescriptions})
-
+		item := newItem(m.Description)
+		item.Metadata = []string{fmt.Sprintf("[%s; %s]", m.PointValue, m.Upgrade)}
+		items = append(items, item)
 	}
 	return ViewModel{Title: "Relic", Subtitle: chosen.Name, Sections: []Section{{Items: items}}}, nil
 }
 
 var loot = func(req Request) (ViewModel, error) {
-	// Occasionally an enchanted item is replaced by a party specialisation type.
-	roll := rand.Intn(10)
-	if roll < len(SPECIALISATION_TYPES["REFERENCE"]) {
-		char := req.str("character")
-		if char == "" {
-			char = randSelect(PARTY_MEMBERS)
-		} else if !slices.Contains(PARTY_MEMBERS, char) {
-			return ViewModel{}, fmt.Errorf("invalid party member %q", char)
+	party, err := fetchParty()
+	if err != nil {
+		return ViewModel{}, err
+	}
+	// Occasionally an enchanted item is replaced by a party specialisation type:
+	// 10% for each specialisation the party has taken.
+	if rand.Intn(10) < len(party.SpecialisationsTaken) {
+		char, err := party.player(req.str("character"))
+		if err != nil {
+			return ViewModel{}, err
 		}
-		return vmText("Loot", fmt.Sprintf("Enchanted item replaced with %s!", randSelect(SPECIALISATION_TYPES[char]))), nil
+		return vmText("Loot", fmt.Sprintf("Enchanted item replaced with %s!", randSelect(char.Specialisations))), nil
 	}
 	return enchantedItem(req)
 }
@@ -518,54 +533,6 @@ var rollTable = []struct {
 	{86, shrine},
 	{99, staticVM("Loot roll", "2x Tarot Cards")},
 	{100, staticVM("Loot roll", "Player's choice and upgrade result with +1 colour!")},
-}
-
-var npc = func(_ Request) (ViewModel, error) {
-	return vmText("NPC", fmt.Sprintf("%s %s", randSelect(GENDERS), randSelect(RACES))), nil
-}
-
-var skill = func(_ Request) (ViewModel, error) { return vmText("Skill", randSelect(SKILLS)), nil }
-var dmgType = func(_ Request) (ViewModel, error) { return vmText("Damage type", randSelect(DAMAGE_TYPES)), nil }
-var creatureType = func(_ Request) (ViewModel, error) {
-	return vmText("Creature type", randSelect(CREATURE_TYPES)), nil
-}
-var ability = func(_ Request) (ViewModel, error) { return vmText("Ability", randSelect(ABILITIES)), nil }
-var condition = func(_ Request) (ViewModel, error) { return vmText("Condition", randSelect(CONDITIONS)), nil }
-var dmgPolarity = func(_ Request) (ViewModel, error) {
-	return vmText("Damage polarity", randSelect(DAMAGE_POLARITIES)), nil
-}
-var partyMember = func(_ Request) (ViewModel, error) {
-	return vmText("Party member", randSelect(PARTY_MEMBERS)), nil
-}
-var xiloan = func(_ Request) (ViewModel, error) { return vmText("Xiloan", randSelect(XILOANS)), nil }
-var weaponClass = func(_ Request) (ViewModel, error) {
-	return vmText("Weapon class", randSelect(WEAPON_CLASSES)), nil
-}
-var physType = func(_ Request) (ViewModel, error) {
-	return vmText("Physical damage type", randSelect(PHYS_TYPES)), nil
-}
-var nonPhysType = func(_ Request) (ViewModel, error) {
-	return vmText("Non-physical damage type", randSelect(NON_PHYS_TYPES)), nil
-}
-var class = func(_ Request) (ViewModel, error) { return vmText("Class", randSelect(CLASSES)), nil }
-var feat = func(_ Request) (ViewModel, error) { return vmText("Feat", randSelect(FEATS)), nil }
-var simpleWeapon = func(_ Request) (ViewModel, error) {
-	return vmText("Simple weapon", randSelect(SIMPLE_WEAPONS)), nil
-}
-var martialWeapon = func(_ Request) (ViewModel, error) {
-	return vmText("Martial weapon", randSelect(MARTIAL_WEAPONS)), nil
-}
-var language = func(_ Request) (ViewModel, error) { return vmText("Language", randSelect(LANGUAGES)), nil }
-var plane = func(_ Request) (ViewModel, error) { return vmText("Plane", randSelect(PLANES)), nil }
-var affinity = func(_ Request) (ViewModel, error) { return vmText("Affinity", randSelect(AFFINITIES)), nil }
-var weaponTrait = func(_ Request) (ViewModel, error) {
-	return vmText("Weapon trait", randSelect(WEAPON_TRAITS)), nil
-}
-var lootResult = func(_ Request) (ViewModel, error) {
-	return vmText("Loot result", randSelect(LOOT_RESULTS)), nil
-}
-var journeyActivity = func(_ Request) (ViewModel, error) {
-	return vmText("Journey activity", randSelect(JOURNEY_ACTIVITIES)), nil
 }
 
 // sortedKeys returns a map's string keys in sorted order (for stable messages).
