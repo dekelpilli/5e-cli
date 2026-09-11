@@ -3,6 +3,10 @@ package main
 // This file defines the JSON contract 5e-cli speaks when driven as a
 // non-interactive helper (e.g. by sns-companion). A request arrives on stdin
 // and a view-model is written to stdout.
+//
+// The view-model keys are namespaced ("loot/title", "item/body"), which is the
+// shape sns-companion consumes directly — the same one its in-process plugins
+// return, so nothing is remapped on the way in.
 
 // Request is the context handed to a command on stdin. Both fields are
 // optional; a command that needs no inputs can be run with no stdin at all.
@@ -48,31 +52,38 @@ func (r Request) strs(key string) []string {
 	return out
 }
 
-// Item is a single generated line, mapped by sns-companion to `:item/*` keys.
+// Item is a single generated line. Body is a template rendered by sns-companion
+// in the browser; with nothing to interpolate it renders as itself. An
+// "item/vars" map alongside it would make a value DM-editable rather than baked
+// into the prose — nothing here emits one yet.
 type Item struct {
-	Title    string   `json:"title,omitempty"`
-	Body     string   `json:"body"`
-	Metadata []string `json:"metadata,omitempty"`
+	Title    string   `json:"item/title,omitempty"`
+	Body     string   `json:"item/body"`
+	Metadata []string `json:"item/metadata,omitempty"`
 }
 
 // Section groups related items under an optional heading.
 type Section struct {
-	Heading string `json:"heading,omitempty"`
-	Items   []Item `json:"items"`
+	Heading string `json:"section/heading,omitempty"`
+	Items   []Item `json:"section/items"`
 }
 
-// Action is an optional UI button (label + event vector).
+// Action is an optional UI button. Not a built ":action/event" vector: that
+// carries the id this command was registered under in sns-companion's config,
+// which this side has no way to know, so the adapter builds it from these three
+// fields and routes the click back to the same command.
 type Action struct {
-	Label string   `json:"label"`
-	Event []string `json:"event"`
+	Label  string         `json:"label"`
+	Action string         `json:"action"`
+	Params map[string]any `json:"params,omitempty"`
 }
 
-// ViewModel is the friendly, un-namespaced result sns-companion consumes.
+// ViewModel is the result sns-companion consumes.
 type ViewModel struct {
-	Title    string    `json:"title"`
-	Subtitle string    `json:"subtitle,omitempty"`
-	Sections []Section `json:"sections,omitempty"`
-	Actions  []Action  `json:"actions,omitempty"`
+	Title    string    `json:"loot/title"`
+	Subtitle string    `json:"loot/subtitle,omitempty"`
+	Sections []Section `json:"loot/sections,omitempty"`
+	Actions  []Action  `json:"loot/actions,omitempty"`
 }
 
 // CommandFunc is a single loot generator: it reads the request and produces a

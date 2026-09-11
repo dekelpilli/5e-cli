@@ -11,3 +11,7 @@ session:
 
 lint:
 	golangci-lint run
+
+.PHONY: companion
+companion:
+	curl -fsSL https://raw.githubusercontent.com/spies-and-spiders/companion/$$(basename $$(curl -fsSLo /dev/null -w '%{url_effective}' https://github.com/spies-and-spiders/companion/releases/latest))/scripts/install.sh | bash

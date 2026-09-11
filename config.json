@@ -8,68 +8,78 @@
       "type": "cli",
       "id": "enchant",
       "label": "Enchanted Item",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "enchant"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "enchant"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "mutate",
       "label": "Mutation",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "mutate"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "mutate"
+        ]
+      }
     },
     {
       "type": "data",
       "id": "colour-upgrade",
       "hidden?": true,
-      "inline": {
-        "label": "Colour Upgrade",
-        "items": [
-          {
-            "result": "Reroll and upgrade the result with +1 colour!"
-          }
-        ],
-        "title": "Colour upgrade",
-        "subtitle": "Chromatic Energy",
-        "sections": [
-          {
-            "each": "items",
-            "item": {
-              "body": "{{result}}"
+      "data": {
+        "inline": {
+          "label": "Colour Upgrade",
+          "items": [
+            {
+              "result": "Reroll and upgrade the result with +1 colour!"
             }
-          }
-        ]
+          ],
+          "title": "Colour upgrade",
+          "subtitle": "Chromatic Energy",
+          "sections": [
+            {
+              "each": "items",
+              "item": {
+                "body": "{{result}}"
+              }
+            }
+          ]
+        }
       }
     },
     {
       "type": "cli",
       "id": "amulet",
       "label": "Amulet",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "amulet"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "amulet"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "crystal",
       "label": "Crystal",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "crystal"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "crystal"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -101,34 +111,38 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "crystal power"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "crystal power"
+        ]
+      }
     },
     {
       "type": "data",
       "id": "dream-mirror",
       "hidden?": true,
-      "inline": {
-        "label": "Dream Mirror",
-        "items": [
-          {
-            "result": "Odd mirrors expand your Dream Pool; even mirrors grant a Dream from it."
-          }
-        ],
-        "title": "Dream Mirror",
-        "subtitle": "Gift from Somnius",
-        "sections": [
-          {
-            "each": "items",
-            "item": {
-              "body": "{{result}}"
+      "data": {
+        "inline": {
+          "label": "Dream Mirror",
+          "items": [
+            {
+              "result": "Odd mirrors expand your Dream Pool; even mirrors grant a Dream from it."
             }
-          }
-        ]
+          ],
+          "title": "Dream Mirror",
+          "subtitle": "Gift from Somnius",
+          "sections": [
+            {
+              "each": "items",
+              "item": {
+                "body": "{{result}}"
+              }
+            }
+          ]
+        }
       }
     },
     {
@@ -148,12 +162,14 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "dream"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "dream"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -172,12 +188,14 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "augment"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "augment"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -191,67 +209,77 @@
           "default": "root"
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "boon"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "boon"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "glyph",
       "label": "Glyph",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "glyph"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "glyph"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "relic",
       "label": "Relic",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "relic"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "relic"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "shrine",
       "label": "Shrine",
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "shrine"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "shrine"
+        ]
+      }
     },
     {
       "type": "data",
       "id": "tarot-cards",
       "hidden?": true,
-      "inline": {
-        "label": "Tarot Cards",
-        "items": [
-          {
-            "result": "Draw 2 tarot cards from the deck."
-          }
-        ],
-        "title": "Tarot cards",
-        "subtitle": "Gift from Aroshi",
-        "sections": [
-          {
-            "each": "items",
-            "item": {
-              "body": "{{result}}"
+      "data": {
+        "inline": {
+          "label": "Tarot Cards",
+          "items": [
+            {
+              "result": "Draw 2 tarot cards from the deck."
             }
-          }
-        ]
+          ],
+          "title": "Tarot cards",
+          "subtitle": "Gift from Aroshi",
+          "sections": [
+            {
+              "each": "items",
+              "item": {
+                "body": "{{result}}"
+              }
+            }
+          ]
+        }
       }
     },
     {
@@ -273,33 +301,37 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "tarot"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "tarot"
+        ]
+      }
     },
     {
       "type": "data",
       "id": "players-choice",
       "hidden?": true,
-      "inline": {
-        "label": "Player's Choice",
-        "items": [
-          {
-            "result": "Player's choice and upgrade result with +1 colour!"
-          }
-        ],
-        "title": "Player's choice",
-        "sections": [
-          {
-            "each": "items",
-            "item": {
-              "body": "{{result}}"
+      "data": {
+        "inline": {
+          "label": "Player's Choice",
+          "items": [
+            {
+              "result": "Player's choice and upgrade result with +1 colour!"
             }
-          }
-        ]
+          ],
+          "title": "Player's choice",
+          "sections": [
+            {
+              "each": "items",
+              "item": {
+                "body": "{{result}}"
+              }
+            }
+          ]
+        }
       }
     },
     {
@@ -307,72 +339,84 @@
       "id": "ability",
       "label": "Ability",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "ability"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "ability"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "affinity",
       "label": "Affinity",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "affinity"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "affinity"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "affix",
       "label": "Affix",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "affix"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "affix"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "carnival",
       "label": "Carnival Game",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "carnival"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "carnival"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "chaos",
       "label": "Chaotic Modifier",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "chaos"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "chaos"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "class",
       "label": "Class",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "class"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "class"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -395,24 +439,28 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "colour"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "colour"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "combat",
       "label": "Combat Breakdown",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "combat"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "combat"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -432,60 +480,70 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "loot"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "loot"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "condi",
       "label": "Condition",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "condi"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "condi"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "creature-type",
       "label": "Creature Type",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "creature type"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "creature type"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "dmg-polarity",
       "label": "Damage Polarity",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "dmg polarity"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "dmg polarity"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "dmg-type",
       "label": "Damage Type",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "dmg type"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "dmg type"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -505,24 +563,28 @@
           "default": 1.3
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "dmg up"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "dmg up"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "feat",
       "label": "Feat",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "feat"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "feat"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -536,180 +598,210 @@
           "type": "int"
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "insight"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "insight"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "journey-activity",
       "label": "Journey Activity",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "journey activity"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "journey activity"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "travel",
       "label": "Journey Travel Day",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "travel"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "travel"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "language",
       "label": "Language",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "language"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "language"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "loot-result",
       "label": "Loot Result",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "loot result"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "loot result"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "martial-wep",
       "label": "Martial Weapon",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "martial wep"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "martial wep"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "mission",
       "label": "Mission",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "mission"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "mission"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "non-phys-type",
       "label": "Non-physical Damage Type",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "non-phys type"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "non-phys type"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "npc",
       "label": "NPC",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "npc"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "npc"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "party-member",
       "label": "Party Member",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "party member"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "party member"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "phys-type",
       "label": "Physical Damage Type",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "phys type"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "phys type"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "plane",
       "label": "Plane",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "plane"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "plane"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "prize",
       "label": "Prize",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "prize"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "prize"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "simple-wep",
       "label": "Simple Weapon",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "simple wep"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "simple wep"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "skill",
       "label": "Skill",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "skill"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "skill"
+        ]
+      }
     },
     {
       "type": "cli",
@@ -734,48 +826,56 @@
           ]
         }
       ],
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "target affix"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "target affix"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "weapon-class",
       "label": "Weapon Class",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "weapon class"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "weapon class"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "trait",
       "label": "Weapon Trait",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "trait"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "trait"
+        ]
+      }
     },
     {
       "type": "cli",
       "id": "xiloan",
       "label": "Xiloan",
       "utility?": true,
-      "command": [
-        "./5e-cli",
-        "-data",
-        "data",
-        "xiloan"
-      ]
+      "cli": {
+        "command": [
+          "./5e-cli",
+          "-data",
+          "data",
+          "xiloan"
+        ]
+      }
     }
   ],
   "loot-table": [
@@ -818,8 +918,10 @@
   ],
   "reporting": {
     "backend": "discord",
-    "webhook-url": "https://discord.com/api/webhooks/1260450657106657471/u_MFUHIiDfRP3s7tZ6smttVpSmWaIyaK8DfEg2ffXBTd5yf9jBjBcsi5eTwOfplao3mu",
-    "avatar-url": "https://media.discordapp.net/attachments/1248589017709150332/1248596614973493298/4503592c-ae86-4f1d-b90c-848a52e19bb3.jpeg?ex=668f1676&is=668dc4f6&hm=dff3a184f854a7b1d388a65ac5bf804b306abb4539cb2ec1035f6016585229e7&=&format=webp&width=960&height=960"
+    "discord": {
+      "webhook-url": "https://discord.com/api/webhooks/1260450657106657471/u_MFUHIiDfRP3s7tZ6smttVpSmWaIyaK8DfEg2ffXBTd5yf9jBjBcsi5eTwOfplao3mu",
+      "avatar-url": "https://media.discordapp.net/attachments/1248589017709150332/1248596614973493298/4503592c-ae86-4f1d-b90c-848a52e19bb3.jpeg?ex=668f1676&is=668dc4f6&hm=dff3a184f854a7b1d388a65ac5bf804b306abb4539cb2ec1035f6016585229e7&=&format=webp&width=960&height=960"
+    }
   },
   "extra-words": [
     "Lawrence",
