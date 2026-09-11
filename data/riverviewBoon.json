@@ -77,9 +77,67 @@
         "description": "Whenever you long jump, you may cause harm of your main hand weapon's base type to one creature adjacent to your destination equal to your level.",
         "children": [
           {
-            "name": "D2 Korlic boss",
-            "description": "",
-            "children": []
+            "name": "Heavy Leap",
+            "description": "After causing Combat Skill's harm, all foes adjacent to you are pushed 10' away from you.",
+            "children": [
+              {
+                "name": "Vacuum Leap",
+                "description": "Heavy Leap instead pushes all foes within a number of feet equal to its push distance towards you, ignoring collision damage.",
+                "children": []
+              },
+              {
+                "name": "Massive Blast",
+                "description": "Your Heavy Leap's push distance is increased to 20'.",
+                "children": []
+              },
+              {
+                "name": "Gravity Well",
+                "description": "For 1 round after pushing creatures with your Heavy Leap, a persistent zone with radius equal to its push distance radiates from you. It restrains foes.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Momentum",
+            "description": "The harm caused by your Combat Skill is increased by an amount equal to half the length (in feet) of the triggering long jump.",
+            "children": [
+              {
+                "name": "Athletic Ability",
+                "description": "Your long jump distance is increased by 10'.",
+                "children": []
+              },
+              {
+                "name": "Pure Momentum",
+                "description": "Momentum's bonus harm is now equal to the length of the triggering long jump, not half.",
+                "children": []
+              },
+              {
+                "name": "Slipstream",
+                "description": "Each foe adjacent to the path of your long jumps suffers force harm equal to your proficiency bonus.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Kinetic Echo",
+            "description": "Whenever you long jump, an ethereal after-image of you lingers at your starting point until the end of the next round, when it violently snaps towards the jump's destination, causing force harm to all foes along the path equal to your level plus your proficiency bonus.",
+            "children": [
+              {
+                "name": "Echo Ricochet",
+                "description": "Whenever your Kinetic Echo snaps forward, choose a second point within 30 feet of its original destination for it to then snap to, causing force harm to foes along that path as well equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Temporal Distortion",
+                "description": "Your Kinetic Echo snaps forward an additional time 1 round after it originally did (this doesn't affect the first snap forward), with the same effects as the first snap forward.",
+                "children": []
+              },
+              {
+                "name": "Echo Implosion",
+                "description": "Whenever your Kinetic Echo snaps forward toward a new point, it leaves behind a 15'x15' persistent zone centred on its origin point for 1 round. The zone causes force harm equal to your level plus your proficiency bonus.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -88,9 +146,46 @@
         "description": "Whenever you score a major success with a melee attack, the target becomes frightened of you for 1 round.",
         "children": [
           {
-            "name": "AQ Pria knight class",
-            "description": "",
-            "children": []
+            "name": "Ferocious Barrage",
+            "description": "Whenever you score a major success with a melee attack, a hail of arrows rains down on the target, causing piercing harm equal to your level.",
+            "children": [
+              {
+                "name": "Wounding Barrage",
+                "description": "Your Ferocious Barrage also causes ongoing piercing harm until the target passes a passive save equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Blinding Barrage",
+                "description": "Your Ferocious Barrage also blinds the target for 1 round.",
+                "children": []
+              },
+              {
+                "name": "Exerted Barrage",
+                "description": "Whenever your Ferocious Barrage triggers, you may expend 1 exertion to increase its harm by your level plus your proficiency bonus.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Ferocious Bash",
+            "description": "Whenever you score a major success with a melee attack while holding a shield, you cause bludgeoning harm to the target equal to your armour.",
+            "children": [
+              {
+                "name": "Dazing Bash",
+                "description": "If your Ferocious Bash triggers off of a critical hit, the target is also dazed for 1 round.",
+                "children": []
+              },
+              {
+                "name": "Exerted Bash",
+                "description": "Whenever your Ferocious Bash triggers, you may expend 1 exertion to increase its harm by your armour plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Lethal Bash",
+                "description": "Your Ferocious Bash's harm increases by an amount equal to your armour.",
+                "children": []
+              }
+            ]
           }
         ]
       }
