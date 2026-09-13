@@ -3120,58 +3120,6 @@
         ]
     },
     {
-        "name": "The Squire",
-        "startingAffixes": [
-            {
-                "description": "+1 physical resistance",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "attack advantage granted by your main hand weapon traits instead grants +5 AB",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "your weapon proficiency is increased by 1 step",
-                "pointValue": "3",
-                "upgrade": "+1/3"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. your weapons with the reach trait have +5' reach",
-                "pointValue": "3",
-                "upgrade": "+5'/3"
-            },
-            {
-                "description": "2. your weapons with the non-lethal trait have +1 base damage die size",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "3. +1 weapon armour",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "4. +1 reflex",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "5. creatures restrained by your weapons with the restraining trait also have -1 resistance",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "6. your weapons with the returning trait have +1 AB with the repeated attack",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            }
-        ]
-    },
-    {
         "name": "The Taming",
         "startingAffixes": [
             {

@@ -102,7 +102,7 @@ var PARTY_MEMBERS []string = []string{
 var FLARE_CHANCES map[string]int = map[string]int{
 	"Quincy":    27, // +2%, rank 1 (+15%)
 	"Viktor":    12, // +2%, rank 1
-	"Arthur":    32, // +1%, rank 3 (+15%)
+	"Arthur":    35, // +1%, rank 4 (+15%)
 	"Nathaniel": 20, // +4%, rank 3
 }
 

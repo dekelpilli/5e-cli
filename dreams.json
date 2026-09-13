@@ -20,5 +20,11 @@
       "upgrade": "+1/1"
     }
   ],
-  "Nathaniel": []
+  "Nathaniel": [
+    {
+      "description": "goods you purchase in cities you have a positive reputation in cost -3 gold",
+      "pointValue": "3",
+      "upgrade": "+1/1"
+    }
+  ]
 }

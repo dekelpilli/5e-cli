@@ -47,11 +47,6 @@
   ],
   "Nathaniel": [
     {
-      "description": "goods you purchase in cities you have a positive reputation in cost -1 gold",
-      "pointValue": "1",
-      "upgrade": "+1/1"
-    },
-    {
       "description": "your expertise die from Townie increases by 2 sizes",
       "pointValue": "1",
       "upgrade": "+1/1"

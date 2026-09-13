@@ -335,7 +335,7 @@ var riverviewBoon = func(req Request) (ViewModel, error) {
 		for _, c := range o.Children {
 			items = append(items, Item{Title: c.Name, Body: c.Description})
 		}
-		sections = append(sections, Section{Heading: fmt.Sprintf("Option %d: %s (%s)", idx+1, o.Name, o.Description)})
+		sections = append(sections, Section{Heading: fmt.Sprintf("Option %d: %s (%s)", idx+1, o.Name, o.Description), Items: items})
 	}
 
 	return ViewModel{
