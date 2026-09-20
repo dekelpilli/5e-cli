@@ -822,12 +822,6 @@
         "affinities": ["mobility", "support"]
     },
     {
-        "description": "on limited power use, heal 2 HP",
-        "pointValue": "1",
-        "upgrade": "+1/1",
-        "affinities": ["resource", "survivability"]
-    },
-    {
         "description": "+1 1st-level spell slot",
         "pointValue": "3",
         "upgrade": "+1 slot OR +1 level/3",
@@ -844,24 +838,6 @@
         "pointValue": "1",
         "upgrade": "+1/1",
         "affinities": ["resource", "offence"]
-    },
-    {
-        "description": "on SR, recover 2 spell slot levels",
-        "pointValue": "2",
-        "upgrade": "+1/1",
-        "affinities": ["resource"]
-    },
-    {
-        "description": "on initiative, recover 2 spell slot levels",
-        "pointValue": "3",
-        "upgrade": "+1/1",
-        "affinities": ["resource"]
-    },
-    {
-        "description": "on initiative, recover 2 exertion",
-        "pointValue": "3",
-        "upgrade": "+1/1",
-        "affinities": ["resource"]
     },
     {
         "description": "+1 damage while you have an active stance",

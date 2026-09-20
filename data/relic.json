@@ -260,58 +260,6 @@
         ]
     },
     {
-        "name": "Icefang Orbit",
-        "startingAffixes": [
-            {
-                "description": "whenever ongoing harm is inflicted on you, make a save. On a fail, you are slowed until the ongoing harm ends",
-                "pointValue": "-3",
-                "upgrade": "-1 to saves vs the slowed condition and 3pts distributed/1"
-            },
-            {
-                "description": "on hit, target suffers 1 ongoing poison harm, stacking until it passes a passive save",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "+2 Dexterity",
-                "pointValue": "4",
-                "upgrade": "+1/2"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +1 outgoing poison harm",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. whenever you cause ongoing poison harm, the target makes a save, becoming slowed on a fail",
-                "pointValue": "3",
-                "upgrade": "creatures have -1 to their saves vs the slowed condition from you/4"
-            },
-            {
-                "description": "3. on killing blow vs creatures suffering ongoing poison harm, gain 5gp",
-                "pointValue": "1",
-                "upgrade": "+5/1"
-            },
-            {
-                "description": "4. on hit, suffer 1 ongoing poison harm, stacking until you pass a passive save; 3pts distributed",
-                "pointValue": "1",
-                "upgrade": "+1 and 3pts distributed/1"
-            },
-            {
-                "description": "5. whenever you cause ongoing harm, you can use your reaction to add 2 cold harm to that ongoing harm effect",
-                "pointValue": "2",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "6. +1 to Dexterity checks",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            }
-        ]
-    },
-    {
         "name": "Spacetime",
         "startingAffixes": [
             {
@@ -1088,58 +1036,6 @@
                 "description": "6. 1/SR, when a damaging attack fails to hit you, heal 7 HP",
                 "pointValue": "1",
                 "upgrade": "+7/1"
-            }
-        ]
-    },
-    {
-        "name": "Prime Supremacy",
-        "startingAffixes": [
-            {
-                "description": "your minions inflict sluggish for 1 round on hit",
-                "pointValue": "3",
-                "upgrade": "+1 minion AB/4"
-            },
-            {
-                "description": "+2 weapon damage while you have an active minion",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "whenever your minions hit, you recover 1 exertion",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. whenever your minions hit, the target makes a save, becoming debilitated for 1 round on a fail",
-                "pointValue": "4",
-                "upgrade": "creatures have -1 to their saves vs the debilitated condition from your minions/3"
-            },
-            {
-                "description": "2. +5' to your area sizes",
-                "pointValue": "3",
-                "upgrade": "+5'/3"
-            },
-            {
-                "description": "3. on turn start, if you've made 2+ weapon attacks since the start of your last turn, recover 1 exertion",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "4. +1 weapon damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "5. +3 minion damage vs sluggish targets",
-                "pointValue": "1",
-                "upgrade": "+2/1"
-            },
-            {
-                "description": "6. +5' speed while you have an active minion",
-                "pointValue": "1",
-                "upgrade": "+5'/1"
             }
         ]
     },
@@ -2180,58 +2076,6 @@
                 "description": "6. +1 damage with mutated powers",
                 "pointValue": "1",
                 "upgrade": "+1/1"
-            }
-        ]
-    },
-    {
-        "name": "Dimensional Doorway",
-        "startingAffixes": [
-            {
-                "description": "+5' maximum teleport distance",
-                "pointValue": "1",
-                "upgrade": "+5'/1"
-            },
-            {
-                "description": "on melee major success, the target makes a save, becoming silenced for 1 round on a fail",
-                "pointValue": "3",
-                "upgrade": "creatures have -1 to their saves vs the silenced condition from you/3"
-            },
-            {
-                "description": "+3 melee damage vs creatures that can cast spells",
-                "pointValue": "1",
-                "upgrade": "+2/1"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. on melee hit vs a silenced target, the target makes a save, becoming sluggish for 1 round on a fail",
-                "pointValue": "1",
-                "upgrade": "creatures have -1 to their saves vs the sluggish condition from you/3"
-            },
-            {
-                "description": "2. +1 melee damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "3. creatures have -1 to their saves vs the silenced condition from you",
-                "pointValue": "3",
-                "upgrade": "-1/3"
-            },
-            {
-                "description": "4. +2 damage with melee major successs",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "5. +1 melee AB vs silenced targets",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "6. as a bonus action, you can teleport 5'",
-                "pointValue": "2",
-                "upgrade": "+5'/2"
             }
         ]
     },
@@ -3328,58 +3172,6 @@
         ]
     },
     {
-        "name": "Warrior's Collar",
-        "startingAffixes": [
-            {
-                "description": "+1 melee damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "your melee attacks deal +1d4 slashing damage",
-                "pointValue": "3",
-                "upgrade": "+1 die size/1"
-            },
-            {
-                "description": "your melee powers cost -1 spell slot level or -1 exertion",
-                "pointValue": "3",
-                "upgrade": "-1/3"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +1 damage with non-limited melee attacks",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. on melee hit, target suffers 1 ongoing slashing harm, stacking until they pass a passive save",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "3. +1 critical success range with non-limited melee attacks",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "4. your melee hits splash 1 damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "5. -1 area damage; 2pts distributed",
-                "pointValue": "1",
-                "upgrade": "-1 and 2pts distributed/1"
-            },
-            {
-                "description": "6. +1 melee slashing damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            }
-        ]
-    },
-    {
         "name": "Raid Captain",
         "startingAffixes": [
             {
@@ -4217,59 +4009,6 @@
                 "description": "6. -1 to death saves; 5pts distributed",
                 "pointValue": "1",
                 "upgrade": "-1 and 5pts distributed/2"
-            }
-        ]
-    },
-    {
-        "name": "Perseverance",
-        "startingAffixes": [
-            {
-                "description": "allies within 60' of you have +1 damage during the first round of combat",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "allies within 60' of you have +1 resistance during the first round of combat",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "if you have scored 2+ weapon hits this combat, +2 resistance",
-                "pointValue": "4",
-                "upgrade": "+1/2"
-            }
-            
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +1 resistance",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "2. if you have scored 2+ weapon hits this combat, +1 weapon armour AB",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "3. if you have scored 2+ weapon hits this combat, +3 weapon damage",
-                "pointValue": "2",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "4. whenever an ally within 60' hits, it gains +1 damage for 1 round",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "5. whenever an ally within 60' hits, it gains +1 resistance for 1 round",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "6. +1 maximum exertion",
-                "pointValue": "3",
-                "upgrade": "+1/3"
             }
         ]
     },
@@ -5116,59 +4855,6 @@
             },
             {
                 "description": "6. +1 ranged damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            }
-        ]
-    },
-    {
-        "name": "Performer's Legacy",
-        "startingAffixes": [
-            {
-                "description": "you and allies adjacent to your minions have +3 lightning resistance",
-                "pointValue": "1",
-                "upgrade": "+2/1"
-            },
-            {
-                "description": "whenever you are hit by your minions, +25' Speed for 1 round",
-                "pointValue": "2",
-                "upgrade": "+10'/1"
-            },
-            {
-                "description": "+2 minion damage",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            }
-            
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. +2 minion resistance",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "2. your minion ranges are doubled",
-                "pointValue": "2",
-                "upgrade": "+1 multiplier/2"
-            },
-            {
-                "description": "3. -5 minion HP; 2pts distributed",
-                "pointValue": "1",
-                "upgrade": "-5 and 2pts distributed/1"
-            },
-            {
-                "description": "4. whenever you or an ally is hit by your minions, the target recovers 5 HP",
-                "pointValue": "2",
-                "upgrade": "+2/1"
-            },
-            {
-                "description": "5. whenever you or an ally is hit by your minions, the target gains 9 temporary HP",
-                "pointValue": "1",
-                "upgrade": "+9/1"
-            },
-            {
-                "description": "6. +1 piercing damage",
                 "pointValue": "1",
                 "upgrade": "+1/1"
             }

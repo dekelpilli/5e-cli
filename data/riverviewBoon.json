@@ -186,6 +186,27 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Ferocious Boost",
+            "description": "1/SR, when you score a major success with a melee attack, you can heal HP equal to double your level plus your proficiency bonus.",
+            "children": [
+              {
+                "name": "Exerted Boost",
+                "description": "Whenever your Ferocious Boost triggers, you may expend 1 exertion to increase its healing by triple your level.",
+                "children": []
+              },
+              {
+                "name": "Extra Boost",
+                "description": "You can use your Ferocious Boost twice between rests.",
+                "children": []
+              },
+              {
+                "name": "Medic's Boost",
+                "description": "Whenever your Ferocious Boost triggers, you can choose for it to instead heal a creature of your choice within 60 feet of you.",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -200,9 +221,67 @@
         "description": "On attack critical success, recover 1 exertion.",
         "children": [
           {
-            "name": "LE Rageborn primalist passive",
-            "description": "",
-            "children": []
+            "name": "Critical Focus",
+            "description": "You have +1 attack critical success range.",
+            "children": [
+              {
+                "name": "Improved Critical Focus",
+                "description": "Your critical damage bonus is increased by an amount equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Echoing Precision",
+                "description": "On attack critical success, you can repeat that attack against a different creature within reach or range. This repeat attack can score a maximum of a standard success.",
+                "children": []
+              },
+              {
+                "name": "Chaotic Conduit",
+                "description": "On attack critical success, you gain a Chaos Charge until the end of combat. You may expend any number of Chaos Charges when making a damaging attack to add a number of d6s of damage to the attack equal to the number of Charges spent. Roll a d6 to determine the extra damage's type: 1. Piercing; 2. Slashing; 3. Poison; 4. Acid; 5. Necrotic; 6. Cold",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Overgrowth",
+            "description": "1/SR, when you expend exertion, heal an amount of HP equal to double your level.",
+            "children": [
+              {
+                "name": "Hybrid Growth",
+                "description": "Whenever you expend exertion, recover 1 spell slot level.",
+                "children": []
+              },
+              {
+                "name": "Potent Growth",
+                "description": "Overgrowth's healing increases by double your level.",
+                "children": []
+              },
+              {
+                "name": "Arcane Growth",
+                "description": "Overgrowth now also triggers whenever you expend a spell slot, and they operate on separate cooldowns.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Keen Flesh",
+            "description": "1/SR, on attack critical success, heal an amount of HP equal to double your level.",
+            "children": [
+              {
+                "name": "Scar Tissue",
+                "description": "Whenever you are healed while bloodied, gain +1 resistance until your next rest.",
+                "children": []
+              },
+              {
+                "name": "Potent Flesh",
+                "description": "Keen Flesh's healing increases by double your level.",
+                "children": []
+              },
+              {
+                "name": "Precision",
+                "description": "Keen Flesh can also be triggered from an attack major success, which has a separate cooldown from the critical success triggering.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -211,9 +290,67 @@
         "description": "Your attacks deal additional damage to creatures not standing on the ground equal to your level.",
         "children": [
           {
-            "name": "FEH Carrot Bow+ weapon on Linhardt Spring Snoozer",
-            "description": "",
-            "children": []
+            "name": "Superiority",
+            "description": "Creatures not standing on the ground while adjacent to you deal less damage equal to your level plus your proficiency bonus if their reflex is lower than yours.",
+            "children": [
+              {
+                "name": "Superior Exposure",
+                "description": "Creatures affected by Superior Dodge have -2 armour.",
+                "children": []
+              },
+              {
+                "name": "Superior Domination",
+                "description": "Creatures affected by Superior Dodge deal less damage equal to quadruple the number of your allies within 10' of them.",
+                "children": []
+              },
+              {
+                "name": "Superior Suppression",
+                "description": "Creatures affected by Superior Dodge are sluggish.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Considered Strikes",
+            "description": "You deal additional damage to creatures not standing on the ground equal to your level plus your proficiency bonus if you are behind them in the initiative tracker.",
+            "children": [
+              {
+                "name": "Considered Defence",
+                "description": "You gain resistance to the damage of creatures affected by Considered Strikes equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Controlled Power",
+                "description": "You deal additional damage to creatures affected by Considered Strikes and another child node of Weighted Strikes equal to double your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Controlled Defence",
+                "description": "You gain resistance to the damage of creatures affected by Considered Strikes and another child node of Weighted Strikes equal to your level.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Challenging Strikes",
+            "description": "You deal additional damage to healthy creatures not standing on the ground equal to your level plus your proficiency bonus.",
+            "children": [
+              {
+                "name": "Challenging Defence",
+                "description": "You gain resistance to the damage of creatures affected by Challenging Strikes equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Tactical Power",
+                "description": "You deal additional damage to creatures affected by Challenging Strikes and another child node of Weighted Strikes equal to double your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Tactical Defence",
+                "description": "You gain resistance to the damage of creatures affected by Challenging Strikes and another child node of Weighted Strikes equal to your level.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -222,9 +359,67 @@
         "description": "Whenever your party kills a creature suffering from ongoing harm, recover 2 exertion.",
         "children": [
           {
-            "name": "PoE2 Spiteful Floret unique",
-            "description": "",
-            "children": []
+            "name": "Merry Replenishment",
+            "description": "1/SR, when your party kills a creature suffering from ongoing harm, heal HP equal to quadruple your current exertion.",
+            "children": [
+              {
+                "name": "Finish Them Off",
+                "description": "You deal additional damage to bloodied creatures equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Potent Replenishment",
+                "description": "Merry Replenishment's healing increases to 8 times your current exertion.",
+                "children": []
+              },
+              {
+                "name": "Extra Replenishment",
+                "description": "Merry Replenishment can now be used twice between rests.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Constant Merriment",
+            "description": "Whenever you hit a creature suffering from ongoing harm, recover 1 exertion.",
+            "children": [
+              {
+                "name": "Constant Replenishment",
+                "description": "1/SR, when you trigger Constant Merriment, heal HP equal to triple your current exertion.",
+                "children": []
+              },
+              {
+                "name": "Potent Merriment",
+                "description": "Constant Merriment's exertion recovery increases to 2.",
+                "children": []
+              },
+              {
+                "name": "Start the Fun",
+                "description": "Whenever you roll for initiative, you may cause ongoing acid harm equal to your level to a creature within 60' of you until it passes a passive save.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Carnival of Pain",
+            "description": "Whenever a foe within 60' of you fails a passive save to end ongoing harm, gain 1 Pain Charge that lasts until the end of combat. Whenever you deal damage, all Pain Charges are expended to increase the damage by a number of d6s of acid damage equal to the number of charges spent.",
+            "children": [
+              {
+                "name": "Revelry in Pain",
+                "description": "Whenever you expend Pain Charges, you also cause ongoing acid harm to the target equal to your proficiency bonus until it passes a passive save.",
+                "children": []
+              },
+              {
+                "name": "Slick Acrobatics",
+                "description": "While you have at least 2 Pain Charges, all of your movement counts as shifting.",
+                "children": []
+              },
+              {
+                "name": "Exultant Pain",
+                "description": "Whenever a foe within 60' of you fails a passive save to end ongoing harm, it immediately suffers acid harm equal to your level.",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -236,12 +431,28 @@
     "children": [
       {
         "name": "Toxic Skin",
-        "description": "Once per long rest, you can coat your body in poison until your next rest. This requires your concentration. Whenever a creature adjacent to you hits you with a melee weapon attack during that time, it makes a save, becoming poisoned and suffering 1d6 ongoing poison harm on a fail, both until it passes a passive save.",
+        "description": "Once per long rest, as a Riverview action, you can coat your body in poison until your next rest. This requires your concentration. Whenever a creature adjacent to you hits you with a melee weapon attack during that time, it makes a save, becoming poisoned and suffering 1d6 ongoing poison harm on a fail, both until it passes a passive save.",
         "children": [
           {
-            "name": "A5E Ring of the Vengeance Seeker",
-            "description": "",
-            "children": []
+            "name": "Slippery Poison",
+            "description": "While Toxic Skin is active, you cannot be grappled or restrained.",
+            "children": [
+              {
+                "name": "Extra Protections",
+                "description": "Slippery Poison also prevents the blinded and sluggish conditions.",
+                "children": []
+              },
+              {
+                "name": "Spit Up",
+                "description": "Whenever you would gain a condition that Slippery Poison prevents, you may choose a creature within 60' of you to immediately suffer poison harm equal to your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Ooze Logic",
+                "description": "Whenever you would gain a condition that Slippery Poison prevents, you may immediately collapse into a puddle and shift up to 30', ignoring hostile creatures. In this puddle form, you can move through spaces as small as 6 inches wide.",
+                "children": []
+              }
+            ]
           }
         ]
       },

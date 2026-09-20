@@ -56,6 +56,162 @@
           "upgrade": "+1/4"
         }
       ]
+    },
+    {
+      "name": "Prime Supremacy",
+      "startingAffixes": [
+        {
+          "description": "your minions inflict sluggish for 1 round on hit",
+          "pointValue": "3",
+          "upgrade": "+1 minion AB/4"
+        },
+        {
+          "description": "+2 weapon damage while you have an active minion",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "whenever your minions hit, you recover 1 exertion",
+          "pointValue": "2",
+          "upgrade": "+1/2"
+        }
+      ],
+      "thematicAffixes": [
+        {
+          "description": "1. whenever your minions hit, the target makes a save, becoming debilitated for 1 round on a fail",
+          "pointValue": "4",
+          "upgrade": "creatures have -1 to their saves vs the debilitated condition from your minions/3"
+        },
+        {
+          "description": "2. +5' to your area sizes",
+          "pointValue": "3",
+          "upgrade": "+5'/3"
+        },
+        {
+          "description": "3. on turn start, if you've made 2+ weapon attacks since the start of your last turn, recover 1 exertion",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "4. +1 weapon damage",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "5. +3 minion damage vs sluggish targets",
+          "pointValue": "1",
+          "upgrade": "+2/1"
+        },
+        {
+          "description": "6. +5' speed while you have an active minion",
+          "pointValue": "1",
+          "upgrade": "+5'/1"
+        }
+      ]
+    },
+    {
+      "name": "Performer's Legacy",
+      "startingAffixes": [
+        {
+          "description": "you and allies adjacent to your minions have +5 lightning resistance",
+          "pointValue": "2",
+          "upgrade": "+2/1"
+        },
+        {
+          "description": "whenever you are hit by your minions, +25' Speed for 1 round",
+          "pointValue": "2",
+          "upgrade": "+10'/1"
+        },
+        {
+          "description": "+3 minion damage",
+          "pointValue": "2",
+          "upgrade": "+1/1"
+        }
+      ],
+      "thematicAffixes": [
+        {
+          "description": "1. +2 minion resistance",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "2. your minion ranges are doubled",
+          "pointValue": "2",
+          "upgrade": "+1 multiplier/2"
+        },
+        {
+          "description": "3. -5 minion HP; 2pts distributed",
+          "pointValue": "1",
+          "upgrade": "-5 and 2pts distributed/1"
+        },
+        {
+          "description": "4. whenever you or an ally is hit by your minions, the target recovers 5 HP",
+          "pointValue": "2",
+          "upgrade": "+2/1"
+        },
+        {
+          "description": "5. whenever you or an ally is hit by your minions, the target gains 9 temporary HP",
+          "pointValue": "1",
+          "upgrade": "+9/1"
+        },
+        {
+          "description": "6. +1 piercing damage",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        }
+      ]
+    },
+    {
+      "name": "Icefang Orbit",
+      "startingAffixes": [
+        {
+          "description": "whenever ongoing harm is inflicted on you, make a save. On a fail, you are slowed until the ongoing harm ends",
+          "pointValue": "-3",
+          "upgrade": "-1 to saves vs the slowed condition and 3pts distributed/1"
+        },
+        {
+          "description": "on hit, target suffers 1 ongoing poison harm, stacking until it passes a passive save",
+          "pointValue": "2",
+          "upgrade": "+1/2"
+        },
+        {
+          "description": "+2 Dexterity",
+          "pointValue": "4",
+          "upgrade": "+1/2"
+        }
+      ],
+      "thematicAffixes": [
+        {
+          "description": "1. +1 outgoing poison harm",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "2. whenever you cause ongoing poison harm, the target makes a save, becoming slowed on a fail",
+          "pointValue": "3",
+          "upgrade": "creatures have -1 to their saves vs the slowed condition from you/4"
+        },
+        {
+          "description": "3. on killing blow vs creatures suffering ongoing poison harm, gain 5gp",
+          "pointValue": "1",
+          "upgrade": "+5/1"
+        },
+        {
+          "description": "4. on hit, suffer 1 ongoing poison harm, stacking until you pass a passive save; 3pts distributed",
+          "pointValue": "1",
+          "upgrade": "+1 and 3pts distributed/1"
+        },
+        {
+          "description": "5. whenever you cause ongoing harm, you can use your reaction to add 2 cold harm to that ongoing harm effect",
+          "pointValue": "2",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "6. +1 to Dexterity checks",
+          "pointValue": "2",
+          "upgrade": "+1/2"
+        }
+      ]
     }
   ],
   "Viktor": [
