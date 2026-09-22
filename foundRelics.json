@@ -1,11 +1,11 @@
 {
   "Quincy": [
     {
-      "name": "Antimagic Collar (L2)",
+      "name": "Antimagic Collar (L5)",
       "startingAffixes": [
         {
-          "description": "-2 spell damage",
-          "pointValue": "-2",
+          "description": "-3 spell damage",
+          "pointValue": "-3",
           "upgrade": "-1 and 2pts distributed/1"
         },
         {
@@ -14,14 +14,19 @@
           "upgrade": "-1 and 6pts distributed/1"
         },
         {
-          "description": "+12 weapon damage",
-          "pointValue": "12",
+          "description": "+14 weapon damage",
+          "pointValue": "14",
           "upgrade": "+1/1"
         },
         {
           "description": "-1 spell base damage die size",
-          "pointValue": "1",
+          "pointValue": "-1",
           "upgrade": "-1 and 2pts distributed/1"
+        },
+        {
+          "description": "+2 weapon critical success range",
+          "pointValue": "8 +2/4",
+          "upgrade": "+1/4"
         }
       ],
       "thematicAffixes": [
@@ -108,110 +113,6 @@
           "upgrade": "+5'/1"
         }
       ]
-    },
-    {
-      "name": "Performer's Legacy",
-      "startingAffixes": [
-        {
-          "description": "you and allies adjacent to your minions have +5 lightning resistance",
-          "pointValue": "2",
-          "upgrade": "+2/1"
-        },
-        {
-          "description": "whenever you are hit by your minions, +25' Speed for 1 round",
-          "pointValue": "2",
-          "upgrade": "+10'/1"
-        },
-        {
-          "description": "+3 minion damage",
-          "pointValue": "2",
-          "upgrade": "+1/1"
-        }
-      ],
-      "thematicAffixes": [
-        {
-          "description": "1. +2 minion resistance",
-          "pointValue": "1",
-          "upgrade": "+1/1"
-        },
-        {
-          "description": "2. your minion ranges are doubled",
-          "pointValue": "2",
-          "upgrade": "+1 multiplier/2"
-        },
-        {
-          "description": "3. -5 minion HP; 2pts distributed",
-          "pointValue": "1",
-          "upgrade": "-5 and 2pts distributed/1"
-        },
-        {
-          "description": "4. whenever you or an ally is hit by your minions, the target recovers 5 HP",
-          "pointValue": "2",
-          "upgrade": "+2/1"
-        },
-        {
-          "description": "5. whenever you or an ally is hit by your minions, the target gains 9 temporary HP",
-          "pointValue": "1",
-          "upgrade": "+9/1"
-        },
-        {
-          "description": "6. +1 piercing damage",
-          "pointValue": "1",
-          "upgrade": "+1/1"
-        }
-      ]
-    },
-    {
-      "name": "Icefang Orbit",
-      "startingAffixes": [
-        {
-          "description": "whenever ongoing harm is inflicted on you, make a save. On a fail, you are slowed until the ongoing harm ends",
-          "pointValue": "-3",
-          "upgrade": "-1 to saves vs the slowed condition and 3pts distributed/1"
-        },
-        {
-          "description": "on hit, target suffers 1 ongoing poison harm, stacking until it passes a passive save",
-          "pointValue": "2",
-          "upgrade": "+1/2"
-        },
-        {
-          "description": "+2 Dexterity",
-          "pointValue": "4",
-          "upgrade": "+1/2"
-        }
-      ],
-      "thematicAffixes": [
-        {
-          "description": "1. +1 outgoing poison harm",
-          "pointValue": "1",
-          "upgrade": "+1/1"
-        },
-        {
-          "description": "2. whenever you cause ongoing poison harm, the target makes a save, becoming slowed on a fail",
-          "pointValue": "3",
-          "upgrade": "creatures have -1 to their saves vs the slowed condition from you/4"
-        },
-        {
-          "description": "3. on killing blow vs creatures suffering ongoing poison harm, gain 5gp",
-          "pointValue": "1",
-          "upgrade": "+5/1"
-        },
-        {
-          "description": "4. on hit, suffer 1 ongoing poison harm, stacking until you pass a passive save; 3pts distributed",
-          "pointValue": "1",
-          "upgrade": "+1 and 3pts distributed/1"
-        },
-        {
-          "description": "5. whenever you cause ongoing harm, you can use your reaction to add 2 cold harm to that ongoing harm effect",
-          "pointValue": "2",
-          "upgrade": "+1/1"
-        },
-        {
-          "description": "6. +1 to Dexterity checks",
-          "pointValue": "2",
-          "upgrade": "+1/2"
-        }
-      ]
     }
   ],
   "Viktor": [
@@ -273,66 +174,66 @@
       ]
     },
     {
-      "name": "Guardian of Souls (L2)",
+      "name": "Icefang Orbit (L2)",
       "startingAffixes": [
         {
-          "description": "+1 spell damage while holding a shield",
-          "pointValue": "1",
-          "upgrade": "+1/1"
+          "description": "whenever ongoing harm is inflicted on you, make a save. On a fail, you are slowed until the ongoing harm ends",
+          "pointValue": "-3",
+          "upgrade": "-1 to saves vs the slowed condition and 3pts distributed/1"
         },
         {
-          "description": "allies within 45' of you have +1 melee weapon damage",
+          "description": "on hit, target suffers 1 ongoing poison harm, stacking until it passes a passive save",
           "pointValue": "2",
           "upgrade": "+1/2"
         },
         {
-          "description": "1/SR, as a bonus action, heal an allied minion within 90' of you for 7 HP",
-          "pointValue": "1",
-          "upgrade": "+7/1"
+          "description": "+2 Dexterity",
+          "pointValue": "4",
+          "upgrade": "+1/2"
         },
         {
-          "description": "+1 resistance while adjacent to Quincy",
+          "description": "on killing blow vs creatures suffering ongoing poison harm, gain 5gp",
           "pointValue": "1",
-          "upgrade": "+1/1"
+          "upgrade": "+5/1"
         }
       ],
       "thematicAffixes": [
         {
-          "description": "1. +1 damage with sword weapons",
+          "description": "1. +1 outgoing poison harm",
           "pointValue": "1",
           "upgrade": "+1/1"
         },
         {
-          "description": "2. -1 resistance while holding a shield; 3pts distributed",
-          "pointValue": "1",
-          "upgrade": "-1 and 3pts distributed/1"
-        },
-        {
-          "description": "3. +5' fly speed",
+          "description": "2. whenever you cause ongoing poison harm, the target makes a save, becoming slowed on a fail",
           "pointValue": "3",
-          "upgrade": "+5'/3"
+          "upgrade": "creatures have -1 to their saves vs the slowed condition from you/4"
         },
         {
-          "description": "4. you cannot have advantage or disadvantage on saves",
+          "description": "3. on killing blow vs creatures suffering ongoing poison harm, gain 5gp",
           "pointValue": "1",
-          "upgrade": "+1 to saves that would be advantaged/4"
+          "upgrade": "+5/1"
         },
         {
-          "description": "5. +1 spell damage",
+          "description": "4. on hit, suffer 1 ongoing poison harm, stacking until you pass a passive save; 3pts distributed",
           "pointValue": "1",
+          "upgrade": "+1 and 3pts distributed/1"
+        },
+        {
+          "description": "5. whenever you cause ongoing harm, you can use your reaction to add 2 cold harm to that ongoing harm effect",
+          "pointValue": "2",
           "upgrade": "+1/1"
         },
         {
-          "description": "6. +1 spell critical success range",
-          "pointValue": "4",
-          "upgrade": "+1/4"
+          "description": "6. +1 to Dexterity checks",
+          "pointValue": "2",
+          "upgrade": "+1/2"
         }
       ]
     }
   ],
   "Arthur": [
     {
-      "name": "Celestial Cloak",
+      "name": "Celestial Cloak (L2)",
       "startingAffixes": [
         {
           "description": "+2 fire resistance",
@@ -348,6 +249,11 @@
           "description": "+1 resistance",
           "pointValue": "2",
           "upgrade": "+1/2"
+        },
+        {
+          "description": "+2 cold resistance",
+          "pointValue": "1",
+          "upgrade": "+1/1"
         }
       ],
       "thematicAffixes": [

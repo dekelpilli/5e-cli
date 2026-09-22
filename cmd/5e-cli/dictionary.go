@@ -110,7 +110,7 @@ var INSIGHTS map[string]int = map[string]int{
 	"Quincy":    6,
 	"Viktor":    1,
 	"Arthur":    3,
-	"Nathaniel": 1,
+	"Nathaniel": 2,
 	"Sidekick":  2,
 }
 
