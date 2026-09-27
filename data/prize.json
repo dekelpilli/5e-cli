@@ -15,7 +15,7 @@
     "Scroll of gambling: bet any multiple of 20gp and roll d100: 1-25 is lose it all, 26-50 is earn it back, 51-75 is earn double gold back, 76-99 is earn as loot rolls/20, 100 is 51 and 76 together (empowered = +1 adv)",
     "Scroll of civilisation: establish new city on a world hex of your choice, fully automated via constructs. Can choose/create 1 service for it to have per instance of this reward, combining into 1 (empowered = +10% discount from all services)",
     "Reroll with advantage (empowered = +1 adv)",
-    "Permanent +1 $dmgType damage (empowered = +1 adv on type)",
+    "Permanent +1 $dmgType damage and outgoing harm (empowered = +1 adv on type)",
     "Learn random feature from $class (empowered = +1 adv on class roll)",
     "Learn random 1st-lvl spell that can be cast 1/LR (empowered = +1 spell level)",
     "Learn random 1st-degree maneuver that can be used 1/LR (empowered = +1 degree)",
@@ -28,6 +28,6 @@
     "Seal a random affix on a piece of equipment of your choice, removing it from its enchantment cluster and adding it to the slot (empowered = +1 adv)",
     "A random slot on your equipment sheet is chosen, and all numerical values in that slot permanently gain a +1 bonus (ignoring polarity) (empowered = adv on slot)",
     "The next time you complete a random mission (chosen now), gain an advantaged, Green loot roll (empowered = +1 colour)",
-    "Gain a permanent +1 damage vs $creatureType creatures (empowered = adv on creature type)",
+    "Gain a permanent +1 damage and outgoing harm vs $creatureType creatures (empowered = adv on creature type)",
     "A random affix is chosen and you permanently radiate a 60' aura that grants that affix to allies (empowered = +1 min pt value of affix)"
 ]
