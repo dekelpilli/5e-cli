@@ -353,6 +353,12 @@
       }
     },
     {
+      "type": "builtin",
+      "id": "social",
+      "label": "Group Social",
+      "section": "Utilities"
+    },
+    {
       "type": "cli",
       "id": "ability",
       "label": "Ability",
