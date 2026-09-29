@@ -20,10 +20,10 @@
       "upgrade": "+1/1"
     }
   ],
-  "Nathaniel": [
+  "Nathaniel (blade flourish)": [
     {
-      "description": "goods you purchase in cities you have a positive reputation in cost -3 gold",
-      "pointValue": "3",
+      "description": "goods you purchase in cities you have a positive reputation in cost -7 gold",
+      "pointValue": "7",
       "upgrade": "+1/1"
     }
   ]

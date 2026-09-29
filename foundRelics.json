@@ -1,7 +1,7 @@
 {
   "Quincy": [
     {
-      "name": "Antimagic Collar (L5)",
+      "name": "Antimagic Collar (L6)",
       "startingAffixes": [
         {
           "description": "-3 spell damage",
@@ -19,13 +19,13 @@
           "upgrade": "+1/1"
         },
         {
-          "description": "-1 spell base damage die size",
-          "pointValue": "-1",
+          "description": "-2 spell base damage die size",
+          "pointValue": "-2",
           "upgrade": "-1 and 2pts distributed/1"
         },
         {
-          "description": "+2 weapon critical success range",
-          "pointValue": "8 +2/4",
+          "description": "+3 weapon critical success range",
+          "pointValue": "12",
           "upgrade": "+1/4"
         }
       ],

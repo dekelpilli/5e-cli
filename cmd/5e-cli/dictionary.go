@@ -115,11 +115,11 @@ var INSIGHTS map[string]int = map[string]int{
 }
 
 var SPECIALISATION_TYPES map[string][]string = map[string][]string{
-	"Quincy":    {"shrine", "shrine", "crystal", "crystal"},
-	"Viktor":    {"relic", "misc"},
-	"Arthur":    {"misc", "crystal"},
-	"Nathaniel": {"misc", "misc"},
-	"REFERENCE": {"S4", "S9"},
+	"Quincy":    {"shrine", "shrine", "crystal", "crystal", "tarot", "relic"},
+	"Viktor":    {"relic", "misc", "?"},
+	"Arthur":    {"misc", "crystal", "?"},
+	"Nathaniel": {"misc", "misc", "misc"},
+	"REFERENCE": {"S4", "S9", "S12"},
 }
 
 var PARTY_LEVEL int = 1

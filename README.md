@@ -153,7 +153,11 @@ FULL PARTY
 Group Persuasion - 4
 Group Deception - 3
 
-DEKEL JONOTHAN BENTLEY
+DEKEL JONATHON SK
+Group Persuasion - 6
+Group Deception - 4
+
+DEKEL JONATHON BENTLEY
 Group Persuasion - 5
 Group Deception - 3
 
