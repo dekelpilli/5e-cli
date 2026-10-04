@@ -13,11 +13,16 @@
       "upgrade": "+5/1"
     }
   ],
-  "Arthur (sneak attack)": [
+  "Arthur ()": [
     {
       "description": "ability check rolls you Help have a +2 bonus",
       "pointValue": "1",
       "upgrade": "+1/1"
+    },
+    {
+      "description": "whenever you deal Sneak Attack damage to a target adjacent to an ally, the damage is increased by 5",
+      "pointValue": "2",
+      "upgrade": "+2/1"
     }
   ],
   "Nathaniel (blade flourish)": [

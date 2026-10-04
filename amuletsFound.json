@@ -1,0 +1,104 @@
+{
+    "Victor": {
+        "name": "The Queen of Rot's Reign (L4)",
+        "base": {
+            "description": "you project a persistent zone 5' around you that causes 2 necrotic harm to foes",
+            "upgrade": "+1"
+        },
+        "further": [
+            {
+                "description": "creatures have -1 resistance if they have suffered harm from you in the last round",
+                "upgrade": "-1"
+            },
+            {
+                "description": "+2 persuasion",
+                "upgrade": "+2"
+            }
+        ],
+        "upgrades": [
+            {
+                "description": "1. +2 outgoing harm",
+                "upgrade": "+2"
+            },
+            {
+                "description": "2. foes adjacent to you have +2 incoming harm",
+                "upgrade": "-2"
+            },
+            {
+                "description": "3. +5' speed",
+                "upgrade": "+5'"
+            },
+            {
+                "description": "4. creatures have -1 resistance if they have suffered harm from you in the last round",
+                "upgrade": "-1"
+            },
+            {
+                "description": "5. your damaging attacks deal +1d4 necrotic damage",
+                "upgrade": "+2 die sizes"
+            },
+            {
+                "description": "6. +1 resistance",
+                "upgrade": "+1"
+            },
+            {
+                "description": "7. +2 persuasion",
+                "upgrade": "+2"
+            },
+            {
+                "description": "8. creatures have -5' speed if they have suffered necrotic harm from you in the last round",
+                "upgrade": "-5'"
+            }
+        ]
+    },
+    "Arthur": {
+        "name": "Yavine's Sniping (L3)",
+        "base": {
+            "description": "+3 ranged damage vs targets 30+' away",
+            "upgrade": "+2"
+        },
+        "further": [
+            {
+                "description": "+5 ranged damage in darkness",
+                "upgrade": "+4"
+            },
+            {
+                "description": "whenever you deal ranged damage, you can self-inflict damage to increase the ranged damage dealt, at 3 HP per 2 damage",
+                "upgrade": "+1 damage"
+            }
+        ],
+        "upgrades": [
+            {
+                "description": "1. +5' speed",
+                "upgrade": "+5'"
+            },
+            {
+                "description": "2. your ranged attacks have double maximum range",
+                "upgrade": "+1 multiplier"
+            },
+            {
+                "description": "3. +1 critical success range vs targets 30+' away",
+                "upgrade": "+1"
+            },
+            {
+                "description": "4. +2 ranged damage",
+                "upgrade": "+2"
+            },
+            {
+                "description": "5. whenever you deal ranged damage, you can self-inflict damage to increase the ranged damage dealt, at 3 HP per 2 damage",
+                "upgrade": "+1 damage"
+            },
+            {
+                "description": "6. +1 lightning absorption",
+                "upgrade": "+1"
+            },
+            {
+                "description": "7. +5 ranged damage in darkness",
+                "upgrade": "+4"
+            },
+            {
+                "description": "8. +1d4 piercing damage with ranged attacks",
+                "upgrade": "+2 die size"
+            }
+        ]
+    }
+}

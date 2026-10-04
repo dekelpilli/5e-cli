@@ -30,11 +30,6 @@
       "upgrade": "+2/1"
     },
     {
-      "description": "whenever you deal Sneak Attack damage to a target adjacent to an ally, the damage is increased by 3",
-      "pointValue": "1",
-      "upgrade": "+2/1"
-    },
-    {
       "description": "whenever you deal Sneak Attack damage to a target within 10' of another creature, the damage is increased by 2",
       "pointValue": "1",
       "upgrade": "+1/1"
