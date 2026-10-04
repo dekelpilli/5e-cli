@@ -1,14 +1,14 @@
 {
   "Quincy": [
     {
-      "description": "you can now use your Dexterity for any Magiscience checks",
-      "pointValue": "3",
-      "upgrade": "+1 Dexterity/2"
+      "description": "1/combat, when you construct a scaffold, you can use a hit die at half effectiveness",
+      "pointValue": "2",
+      "upgrade": "+1 healing/1"
     },
     {
-      "description": "your scaffolds are created with 7 temporary HP",
-      "pointValue": "1",
-      "upgrade": "+7/1"
+      "description": "you have +1 critical hit range with your first weapon attack since arriving on your current scaffold",
+      "pointValue": "3",
+      "upgrade": "+1/3"
     }
   ],
   "Viktor": [
