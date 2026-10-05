@@ -134,8 +134,8 @@ Specialisation after the first 'event' of sessions 4, 7, 10, 13, 16 (5 total)
 Augment after the first 'event' of sessions 6, 12, 18 (3 total)
 
 DELAYED:
-Specialisation after the first 'event' of sessions 4, 9, 12, 15, 18 (5 total)
-Augment after the first 'event' of sessions 8, 14, 20 (3 total)
+Specialisation after the first 'event' of sessions 4, 9, 12, 16, 19 (5 total)
+Augment after the first 'event' of sessions 8, 15, 21 (3 total)
 
 ## Next campaign notes
 - Increase outgoing harm scaling point values to 2 base
