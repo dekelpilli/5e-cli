@@ -453,6 +453,48 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Potent Toxins",
+            "description": "Toxic Skin's ongoing harm increases to 3d6.",
+            "children": [
+              {
+                "name": "Venom Splash",
+                "description": "Whenever Toxic Skin causes applies ongoing harm, you may apply 1d6 ongoing harm to another creature within 20' of the target.",
+                "children": []
+              },
+              {
+                "name": "Corrosion",
+                "description": "Whenever a creature fails its passive save against Toxic Skin, it gets -1 AB for the remainder of combat.",
+                "children": []
+              },
+              {
+                "name": "Rattling Venom",
+                "description": "While a creature is suffering Toxic Skin's ongoing harm, it is also rattled.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Miasmic Aura",
+            "description": "While Toxic Skin is active, you radiate a 10' persistent zone that grants foes -1 AB. Additionally, whenever a creature attacks with this AB reduction, you gain 1 Miasma Charge (max 3) until Toxic Skin ends.",
+            "children": [
+              {
+                "name": "Miasma Reflux",
+                "description": "As a Riverview action, you can expend a Miasma Charge to make a creature within 30' of you brittle for 1 round. If the creature is poisoned, it also suffers poison harm equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Breathe Miasma",
+                "description": "1/SR, as a Riverview action, you can expend a Miasma Charge to gain temporary HP equal to double your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Miasma Vapour",
+                "description": "As a Riverview action, you can expend a Miasma Charge to shapeshift into a Vapour Form for 1 round, gaining 20' of fly speed, converting all your movement to shifting, and gaining the ability to pass through the spaces of hostile creatures.",
+                "children": []
+              }
+            ]
           }
         ]
       },
