@@ -503,9 +503,67 @@
         "description": "Your skin becomes stone, all gold costs from your journey activities are halved, you no longer need to breathe, you gain +4 maximum HP, your armour increases by 1, your reflex decreases by 1, and your unarmed attacks deal additional damage equal to your proficiency bonus.",
         "children": [
           {
-            "name": "Cypher Stone Body abides in stone focus trait",
-            "description": "",
-            "children": []
+            "name": "Stone Bash",
+            "description": "Your unarmed attacks deal additional damage equal to your level.",
+            "children": [
+              {
+                "name": "Boulder Body",
+                "description": "You gain +10 maximum HP.",
+                "children": []
+              },
+              {
+                "name": "Heavy Hands",
+                "description": "Your unarmed attacks have +1 AB.",
+                "children": []
+              },
+              {
+                "name": "Still as a Statue",
+                "description": "1/LR, as a Riverview action, you set all your speeds to 0 and become incapacitated. All attacks made against you in this form are reduced by 2 success tiers. You can end this effect at any time, but if it lasts for at least 24 hours, you emerge with full HP and no conditions or diseases.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Golem Grip",
+            "description": "1/combat, as a Riverview action, a creature within your reach becomes restrained until they use an action to break free. As a Riverview action while you are restraining a creature in this way, you can cause bludgeoning harm to them equal to your level plus your proficiency bonus.",
+            "children": [
+              {
+                "name": "Golem Stomp",
+                "description": "1/SR, as a Riverview action, you can cause thunder harm equal to your level plus your proficiency bonus to all foes adjacent to you. Each affected foe is then pushed 5' away from you or knocked prone (your choice for each).",
+                "children": []
+              },
+              {
+                "name": "Deep Reserves",
+                "description": "You gain +10 maximum HP.",
+                "children": []
+              },
+              {
+                "name": "Structural Brace",
+                "description": "The amount of weight you can hold increases to 45 tonnes and any contested Strength checks you make grant you a minimum roll of 18 on the d20.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Field of Stones",
+            "description": "You can attempt to Hide in natural terrain regardless of light conditions, appearing as a natural rock formation, with a d6 expertise die. If the terrain is already rocky, your d20 roll on the Stealth check also has a minimum of 15.",
+            "children": [
+              {
+                "name": "Perfect Disguise",
+                "description": "Your attempts to Hide in natural terrain always succeed.",
+                "children": []
+              },
+              {
+                "name": "Rolling Stone",
+                "description": "1/LR, as a Riverview action, you can shift up to 120', during which you can move through hostile spaces. The first time you enter a creature's space during this movement, it suffers bludgeoning harm equal to your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Earthshake",
+                "description": "Once ever, as a Riverview action, you cause significant structural damage to any structures within 1km of you. All creatures in the area also suffer bludgeoning harm equal to your level.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -514,9 +572,25 @@
         "description": "Once per long rest, as a Riverview action, you can instantly revive all allies on 0 HP within 60' of you. While this action is not on cooldown, it occupies your concentration.",
         "children": [
           {
-            "name": "WoW High Inquisitor Whitemane",
-            "description": "",
-            "children": []
+            "name": "Heal",
+            "description": "1/SR, as a Riverview action, you can heal a creature within 30' of you for an amount equal to your level.",
+            "children": [
+              {
+                "name": "Frequent Heal",
+                "description": "You can now use your Heal twice per short rest.",
+                "children": []
+              },
+              {
+                "name": "todo: riverview action",
+                "description": "You can now use your Heal twice per short rest.",
+                "children": []
+              },
+              {
+                "name": "todo: heal into harm",
+                "description": "You can now use your Heal twice per short rest.",
+                "children": []
+              }
+            ]
           }
         ]
       }
