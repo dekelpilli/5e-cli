@@ -100,5 +100,56 @@
                 "upgrade": "+2 die size"
             }
         ]
+    },
+    "Nathaniel": {
+        "name": "The Primordial's Origin",
+        "base": {
+            "description": "+1 non-physical absorption",
+            "upgrade": "+1"
+        },
+        "further": [
+            {
+                "description": "+4 to the resistance bonus from absorption",
+                "upgrade": "+2"
+            },
+            {
+                "description": "as a reaction to taking physical damage, you can convert one physical type to force",
+                "upgrade": "+2 non-physical resistance"
+            }
+        ],
+        "upgrades": [
+            {
+                "description": "1. +2 incoming healing",
+                "upgrade": "+2"
+            },
+            {
+                "description": "2. +2 non-physical resistance",
+                "upgrade": "+2"
+            },
+            {
+                "description": "3. as a reaction to taking physical damage, you can convert one physical type to force",
+                "upgrade": "+2 non-physical resistance"
+            },
+            {
+                "description": "4. +5' truesight",
+                "upgrade": "+5'"
+            },
+            {
+                "description": "5. your damaging attacks deal +1d4 force damage",
+                "upgrade": "+2 die size"
+            },
+            {
+                "description": "6. +2 true damage",
+                "upgrade": "+2"
+            },
+            {
+                "description": "7. +3 true resistance",
+                "upgrade": "+2"
+            },
+            {
+                "description": "8. +2 to the resistance bonus from absorption",
+                "upgrade": "+2"
+            }
+        ]
     }
 }

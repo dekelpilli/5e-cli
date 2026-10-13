@@ -62,11 +62,6 @@
       "upgrade": "+1/1"
     },
     {
-      "description": "enchanted items your party sell in cities you have a positive reputation in sell for +1 gold",
-      "pointValue": "1",
-      "upgrade": "+1/1"
-    },
-    {
       "description": "your Slashing Flourish's bonus damage is increased by 2",
       "pointValue": "2",
       "upgrade": "+1/1"

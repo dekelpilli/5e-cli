@@ -150,16 +150,16 @@ Nathaniel - Medium Armour Master, Inspiring Leader
 
 ## Socials
 FULL PARTY
-Group Persuasion - 4 (need recalc from bentley)
-Group Deception - 3
+Group Persuasion - 4 (need recalc from bentley + jonathon)
+Group Deception - 3 (need recalc from jonathon)
 
 DEKEL JONATHON SK
-Group Persuasion - 6
-Group Deception - 4
+Group Persuasion - 6 (need recalc from jonathon)
+Group Deception - 4 (need recalc from jonathon)
 
 DEKEL JONATHON BENTLEY
-Group Persuasion - 5 (need recalc from bentley)
-Group Deception - 3
+Group Persuasion - 5 (need recalc from bentley + jonathon)
+Group Deception - 3 (need recalc from jonathon)
 
 DEKEL DAN SK
 Group Persuasion - 

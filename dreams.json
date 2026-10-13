@@ -25,10 +25,15 @@
       "upgrade": "+2/1"
     }
   ],
-  "Nathaniel (blade flourish)": [
+  "Nathaniel ()": [
     {
       "description": "goods you purchase in cities you have a positive reputation in cost -7 gold",
       "pointValue": "7",
+      "upgrade": "+1/1"
+    },
+    {
+      "description": "enchanted items your party sell in cities you have a positive reputation in sell for +5 gold",
+      "pointValue": "5",
       "upgrade": "+1/1"
     }
   ]
