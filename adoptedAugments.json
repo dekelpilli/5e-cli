@@ -4,6 +4,11 @@
       "type": "identity",
       "name": "Homesick",
       "description": "While an ally is adjacent to you or a scaffold you are perched on, your ranged attacks have +2 AB."
+    },
+    {
+      "type": "identity",
+      "name": "Reflief from Paranoia",
+      "description": "Whenever the weather obscures the moon (Blizzard or Downpour), you have +5 critical success range for the Cook journey activity."
     }
   ],
   "Viktor": [
@@ -11,6 +16,11 @@
       "type": "generated",
       "name": "Extensive Care",
       "description": "Whenever you heal a creature with a levelled spell, your Monstrous Minion is also healed an amount equal to double the spell's level plus your Intelligence modifier. This counts as a separate instance of healing."
+    },
+    {
+      "type": "partner",
+      "name": "Supportive Friend",
+      "description": "Whenever a creature other than your Monstrous Minion consumes Arthur's Help on a foe, your Monstrous Minion's next attack against that foe has advantage."
     }
   ],
   "Arthur": [
@@ -18,6 +28,11 @@
       "type": "generated",
       "name": "Superior Support",
       "description": "Your Help action's range is increased by 30 feet, and attacks aided by your Help action also have +1 AB."
+    },
+    {
+      "type": "identity",
+      "name": "Horoscope",
+      "description": "Whenever you finish a long rest, the moon's shape category will be revealed to you, granting an effect until your next long rest (d4): 1. Jagged, your d20 rolls have a -3 penalty; 2. Angular, your d20 rolls have a +1 bonus; 3. Smooth, as Angular, and your damage is increased by your proficiency bonus; 4. Round, as Smooth, and your d20 rolls have +1 critical success range."
     }
   ],
   "Nathaniel": [
@@ -25,6 +40,11 @@
       "type": "keyword",
       "name": "Battle Entertainment",
       "description": "Whenever you consume your Bardic Inspiration, you start Performing for 1 round. While Performing, allies within 60 feet of you have +1 AB."
+    },
+    {
+      "type": "gap",
+      "name": "Skill Monkey",
+      "description": "You immediately gain three skill proficiencies of your choice."
     }
   ]
 }

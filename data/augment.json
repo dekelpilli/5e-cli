@@ -11,11 +11,6 @@
             "description": "Nathaniel has advantage when making ability checks for your Exposed Weaknesses. Additionally, his damage always counts as both physical and non-physical for the purposes of your Exposed Weaknesses."
         },
         {
-            "type": "identity",
-            "name": "Reflief from Paranoia",
-            "description": "Whenever the weather obscures the moon (Blizzard or Downpour), you have +5 critical success range for the Cook journey activity."
-        },
-        {
             "type": "gap",
             "name": "Survival Training",
             "description": "You can use the Cook journey activity even during Sweltering weather."
@@ -47,11 +42,6 @@
         }
     ],
     "Viktor": [
-        {
-            "type": "partner",
-            "name": "Supportive Friend",
-            "description": "Whenever a creature other than your Monstrous Minion consumes Arthur's Help on a foe, your Monstrous Minion's next attack against that foe has advantage."
-        },
         {
             "type": "partner",
             "name": "Stabilising Presence",
@@ -103,11 +93,6 @@
             "type": "partner",
             "name": "Inspiring Presence",
             "description": "While you are adjacent to Viktor, you both have +1 AB and additional damage and minion damage equal to your proficiency bonus."
-        },
-        {
-            "type": "identity",
-            "name": "Horoscope",
-            "description": "Whenever you finish a long rest, the moon's shape category will be revealed to you, granting an effect until your next long rest (d4): 1. Jagged, your d20 rolls have a -3 penalty; 2. Angular, your d20 rolls have a +1 bonus; 3. Smooth, as Angular, and your damage is increased by your proficiency bonus; 4. Round, as Smooth, and your d20 rolls have +1 critical success range."
         },
         {
             "type": "identity",
@@ -165,11 +150,6 @@
             "type": "gap",
             "name": "Man of the People",
             "description": "You consider all humanoids to be of any societal class of your choice (eg. commoner, noble, etc.), and while you are in a tavern that knows you (through word of mouth or because you have performed there, etc.) the patrons are always helpful in providing information to you."
-        },
-        {
-            "type": "gap",
-            "name": "Skill Monkey",
-            "description": "You immediately gain three skill proficiencies of your choice."
         },
         {
             "type": "keyword",

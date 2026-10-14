@@ -3432,58 +3432,6 @@
         ]
     },
     {
-        "name": "The Primordial Chain",
-        "startingAffixes": [
-            {
-                "description": "+1 minion AB",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "minion-related affixes on your other items have +1 numeric magnitude, ignoring polarity",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "-10 minion HP",
-                "pointValue": "-2",
-                "upgrade": "-5 and 2pts distributed/1"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. whenever you summon a minion, you cannot summon other minion creature types until your next long rest; 2pts distributed",
-                "pointValue": "1",
-                "upgrade": "-5 minion HP and 2pts distributed/1"
-            },
-            {
-                "description": "2. your minions are 1 size smaller",
-                "pointValue": "2",
-                "upgrade": "+1/2"
-            },
-            {
-                "description": "3. -2 minion damage; 2pts distributed",
-                "pointValue": "1",
-                "upgrade": "-1 and 2pts distributed/1"
-            },
-            {
-                "description": "4. +5' minion speed",
-                "pointValue": "1",
-                "upgrade": "+5'/1"
-            },
-            {
-                "description": "5. whenever you summon a minion, it gains 6 temporary HP",
-                "pointValue": "1",
-                "upgrade": "+6/1"
-            },
-            {
-                "description": "6. whenever your minion hits, it can shift 5'",
-                "pointValue": "2",
-                "upgrade": "+5'/2"
-            }
-        ]
-    },
-    {
         "name": "Restorative Locket",
         "startingAffixes": [
             {
