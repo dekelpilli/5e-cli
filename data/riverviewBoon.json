@@ -573,7 +573,7 @@
         "children": [
           {
             "name": "Heal",
-            "description": "1/SR, as a Riverview action, you can heal a creature within 30' of you for an amount equal to your level.",
+            "description": "1/SR, as a Riverview action, you can heal a creature within 40' of you for an amount equal to double your level.",
             "children": [
               {
                 "name": "Frequent Heal",
@@ -581,13 +581,55 @@
                 "children": []
               },
               {
-                "name": "todo: riverview action",
-                "description": "You can now use your Heal twice per short rest.",
+                "name": "Robust Healing",
+                "description": "Whenever you use a Riverview action on a child boon of Constitution (other than Mass Revival or its children), you gain outgoing healing for the remainder of combat equal to your proficiency bonus.",
                 "children": []
               },
               {
-                "name": "todo: heal into harm",
-                "description": "You can now use your Heal twice per short rest.",
+                "name": "Inverted Heal",
+                "description": "Heal now causes necrotic harm instead of healing, which is increased to quadruple your level.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Shield",
+            "description": "1/SR, as a Riverview action, grant a creature within 40' of you temporary HP equal to double your level plus your proficiency bonus.",
+            "children": [
+              {
+                "name": "Focusing Shield",
+                "description": "Creatures affected by Shield cannot lose concentration against their will.",
+                "children": []
+              },
+              {
+                "name": "Potent Shield",
+                "description": "Shield's temporary HP increases to five times your level.",
+                "children": []
+              },
+              {
+                "name": "Robust Shield",
+                "description": "Whenever you use a Riverview action on a child boon of Constitution (other than Mass Revival or its children), you gain outgoing temporary HP for the remainder of combat equal to your level.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Dominate Mind",
+            "description": "As a Riverview action, a creature within 20' of you must make a save, becoming dominated on a fail until it passes a passive save.",
+            "children": [
+              {
+                "name": "Reliable Domination",
+                "description": "Creatures have -1 to their saves against Dominate Mind.",
+                "children": []
+              },
+              {
+                "name": "Distant Domination",
+                "description": "Dominate Mind's range increases to 60'.",
+                "children": []
+              },
+              {
+                "name": "Persistant Domination",
+                "description": "Dominate Mind now lasts for the remainder of combat.",
                 "children": []
               }
             ]
@@ -602,12 +644,70 @@
     "children": [
       {
         "name": "A Solution for Anything",
-        "description": "Once per long rest, when a creature who can sense you starts their turn, you can grant it the ability to ignore all sources of disadvantage until its next turn.",
+        "description": "1/SR, when a creature who can sense you starts their turn, you can grant it the ability to ignore all sources of disadvantage until its next turn.",
         "children": [
           {
-            "name": "A5E Nothing that Can't Be Solved savant feature",
-            "description": "",
-            "children": []
+            "name": "Skill Focus",
+            "description": "When you gain this boon, choose a skill you are proficient with to permanently gain an expertise die on.",
+            "children": [
+              {
+                "name": "True Expertise",
+                "description": "Your expertise dice have a +1 bonus.",
+                "children": []
+              },
+              {
+                "name": "Skilled",
+                "description": "When you gain this boon, gain proficiency in a skill of your choice.",
+                "children": []
+              },
+              {
+                "name": "Extra Focus",
+                "description": "When you gain this boon, choose a skill you are proficient with, other than the skill chosen for Skill Focus, to permanently gain an expertise die on.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Ultimate Schema",
+            "description": "Whenever you complete a long rest, choose the effect of a spell of 2nd level or lower. You can have that effect occur immediately, or keep it in reserve until your next long rest. While it is in reserve, you can cause it to occur at any point as a Riverview action.",
+            "children": [
+              {
+                "name": "Instant Schema",
+                "description": "Whenever you trigger Ultimate Schema immediately, the spell effect is upcast two levels.",
+                "children": []
+              },
+              {
+                "name": "Frequent Schema",
+                "description": "You can now use Ultimate Schema whenever you complete a short rest, and its reserve lasts until your next rest instead.",
+                "children": []
+              },
+              {
+                "name": "Smart Schema",
+                "description": "Whenever you use a Riverview action on a child boon of Intellect (other than A Solution for Anything or its children), you gain bonus spell damage equal to your proficiency bonus for the remainder of combat.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Impromptu Persona",
+            "description": "You can use your level in place of your Charisma for Deception and Persuasion checks.",
+            "children": [
+              {
+                "name": "Potent Persuasion",
+                "description": "You gain an expertise die in Persuasion.",
+                "children": []
+              },
+              {
+                "name": "Potent Deception",
+                "description": "You gain an expertise die in Deception.",
+                "children": []
+              },
+              {
+                "name": "Impromptu Flex",
+                "description": "You can use your level in place of your Charisma or Strength for Intimidation and Brawn checks.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -616,9 +716,67 @@
         "description": "During a long rest, you can perform a ritual to grant a creature of your choice ugly, troll-like features until your next long rest. To do so, the target must be on the same plane of existence as you, and you must have some of their DNA. While a creature has these features, they have a -4 penalty to all Persuasion and Deception checks.",
         "children": [
           {
-            "name": "Buffy Thornton's Hope",
-            "description": "",
-            "children": []
+            "name": "Mocking Resemblance",
+            "description": "Whenever you use Transmogrify, you may provide the DNA of a second creature. The target develops a grotesque parody of that creature's facial features, which is immediately recognised by creatures familiar with the second creature.",
+            "children": [
+              {
+                "name": "Unfortune Reputation",
+                "description": "Whenever a creature familiar with the second creature from Mocking Resemblance sees the Transmogrified creature for the first time, it makes a save. On a fail, it believes the Transmogrified creature is the second creature for 1 minute.",
+                "children": []
+              },
+              {
+                "name": "Perfect Caricature",
+                "description": "The Transmogrified creature gains advantage on Deception checks while impersonating the second creature from Mocking Resemblance.",
+                "children": []
+              },
+              {
+                "name": "Stolen Mannerisms",
+                "description": "The Transmogrified creature unintentionally adopts the mimicked creature's speech patterns and habits, granting them the Intelligence, Wisdom, and Charisma scores of the mimicked creature.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Mutative Spillover",
+            "description": "Whenever a Transmogrified creature scores a critical failure, it only scores critical failures on its d20 rolls until the Transmogrification ends.",
+            "children": [
+              {
+                "name": "Unstable Biology",
+                "description": "Mutative Spillover now triggers on a critical failure or critical success.",
+                "children": []
+              },
+              {
+                "name": "Shared Mutation",
+                "description": "Whenever Mutative Spillover first triggers, you may choose another creature within 30' of you to gain the same effect for the same duration.",
+                "children": []
+              },
+              {
+                "name": "Interesting Specimen",
+                "description": "Whenever Mutative Spillover first triggers, you gain temporary HP equal to triple your level plus your proficiency bonus.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Trophy Collection",
+            "description": "Whenever you obtain a creature's DNA for the first time, it gets recorded in your Trophy Collection. You gain an expertise die on History checks made to recall information about recorded creatures.",
+            "children": [
+              {
+                "name": "Borrowed Quirks",
+                "description": "Whenever you complete a long rest, you may choose a creature from your Trophy Collection to gain one cosmetic trait from until your next long rest. Additionally, for the same duration, you gain advantage with a skill based on the chosen creature (DM's choice).",
+                "children": []
+              },
+              {
+                "name": "Catalogue of Horrors",
+                "description": "Whenever you encounter a creature recorded in your Trophy Collection, you immediately know that it is already catalogued, even if it looks different than before. Additionally, the History bonus from Trophy Collection now applies to all creatures of the same species as a recorded creature.",
+                "children": []
+              },
+              {
+                "name": "Supreme Transmogrifier",
+                "description": "Whenever you Transmogrify a creature, you can combine traits from up to 3 creatures in your Trophy Collection for the appearance instead of defaulting to troll-like features. Additionally, your attacks that frighten have advantage against Transmogrified creatures.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -627,9 +785,67 @@
         "description": "You deal additional damage equal to your level while no allies are within 10' of you.",
         "children": [
           {
-            "name": "NW Blessed Wanderer paladin class feature",
-            "description": "",
-            "children": []
+            "name": "Pensive Protection",
+            "description": "This boon occupies your concentration. You and allies within 10' of you have +1 to all defences.",
+            "children": [
+              {
+                "name": "Distant Protection",
+                "description": "Pensive Protection's range increases to 30'.",
+                "children": []
+              },
+              {
+                "name": "Potent Protection",
+                "description": "Pensive Protection's defence bonus increases to +2.",
+                "children": []
+              },
+              {
+                "name": "Multitasked Protection",
+                "description": "Pensive Protection no longer occupies your concentration.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Composure",
+            "description": "You have 1 additional 1st-level spell slot.",
+            "children": [
+              {
+                "name": "Plentiful Composure",
+                "description": "Composure grants 1 additional spell slot.",
+                "children": []
+              },
+              {
+                "name": "Potent Composure",
+                "description": "Spell slots granted by Composure are 2nd level.",
+                "children": []
+              },
+              {
+                "name": "Fractured Composure",
+                "description": "Whenever you expend a spell slot granted by Composure, roll a d6. On a 5+, that slot is not expended. On a 1, additionally expend your lowest-level spell slot.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Pensive Wrath",
+            "description": "This boon occupies your concentration. You and allies within 10' of you have +1 critical hit range.",
+            "children": [
+              {
+                "name": "Controlled Wrath",
+                "description": "Foes within your Pensive Wrath's area cannot score major or critical successes; such successes become standard successes instead.",
+                "children": []
+              },
+              {
+                "name": "Potent Wrath",
+                "description": "Pensive Wrath's critical hit range bonus increases to +2.",
+                "children": []
+              },
+              {
+                "name": "Multitasked Wrath",
+                "description": "Pensive Wrath no longer occupies your concentration.",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -644,9 +860,67 @@
         "description": "You can consider any creature to be of any creature type of your choice at will.",
         "children": [
           {
-            "name": "Temtem Eraser gear",
-            "description": "",
-            "children": []
+            "name": "Madness",
+            "description": "As a Riverview action, you can sacrifice HP equal to quadruple your level in order to gain ranged and area damage and resistance for the remainder of combat equal to your proficiency bonus.",
+            "children": [
+              {
+                "name": "Intense Madness",
+                "description": "Madness' sacrifice requirement is doubled, but its bonus increases by your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Sturdy Madness",
+                "description": "Madness no longer grants a damage bonus, but its bonus increases by your level plus your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Arcane Madness",
+                "description": "Madness' sacrifice changes to requiring you to expend your lowest-level spell slot.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Antitoxins",
+            "description": "As a Riverview action, cure all creatures of your choice within 30' of you of the poisoned or weakened conditions. Then, a cured creature's spells cost -1 slot level (minimum 1) for the remainder of combat.",
+            "children": [
+              {
+                "name": "Protoxins",
+                "description": "Antitoxin can now grant either of its conditions to a specific target instead of curing it (you choose for each target), but the target must fail a save for the effect to take hold.",
+                "children": []
+              },
+              {
+                "name": "Mutual Invigoration",
+                "description": "Whenever you cure a creature with Antitoxin, you also gain its lasting benefits.",
+                "children": []
+              },
+              {
+                "name": "Martial Invigoration",
+                "description": "Antitoxin's lasting benefit also grants -1 exertion cost of maneuvers (minimum 1).",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Look Out",
+            "description": "As a Riverview action, you grant all creatures of your choice within 30' of you immunity to the effects of the unconscious and incapacitated conditions for the remainder of combat. This allows creatures to act while at 0 HP.",
+            "children": [
+              {
+                "name": "Extra Alert",
+                "description": "Look Out also grants immunity to the confused and dazed conditions.",
+                "children": []
+              },
+              {
+                "name": "Snap Out of It",
+                "description": "Look Out also grants immunity to the frightened and rattled conditions.",
+                "children": []
+              },
+              {
+                "name": "Anticipation",
+                "description": "Whenever you use a Riverview action on a child boon of Understanding (other than All Existence is the Same or its children), you gain a bonus to the percentage of health restored when you revive a creature for the remainder of combat equal to your proficiency bonus.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -655,9 +929,67 @@
         "description": "Whenever you roll for initiative, an orb of static electricity begins to orbit you at an unpredictable distance. Roll a d6, and for the remainder of combat you project a persistent zone that always, and only, covers the spaces that are a number of spaces away from you equal to the roll. This persistent zone causes lightning harm to foes equal to half your proficiency bonus.",
         "children": [
           {
-            "name": "D3 Josh Mosqueira rift guardian",
-            "description": "",
-            "children": []
+            "name": "Slow and Tough",
+            "description": "Your Speed is reduced by 5', but you gain +12 maximum HP.",
+            "children": [
+              {
+                "name": "Extra Tough",
+                "description": "You gain resistance equal to half your proficiency bonus.",
+                "children": []
+              },
+              {
+                "name": "Potent Toughness",
+                "description": "You gain +12 maximum HP.",
+                "children": []
+              },
+              {
+                "name": "Impotent",
+                "description": "Slow and Tough's Speed reduction changes to reducing your damage by 1.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Wormhole",
+            "description": "Whenever you roll for initiative, a portal opens on the ground in a space adjacent to you, as well as one adjacent to a hostile creature within 60' of you. Whenever a creature steps onto either portal, you may have it instantly teleport to the other.",
+            "children": [
+              {
+                "name": "Controlled Wormhole",
+                "description": "Wormhole no longer triggers on initiative roll, but instead now can be used as a Riverview action.",
+                "children": []
+              },
+              {
+                "name": "Secure Wormhole",
+                "description": "Wormhole's portal near a hostile creature can now be up to 15' away from the creature.",
+                "children": []
+              },
+              {
+                "name": "Remote Wormhole",
+                "description": "Wormhole's portal near you can now be up to 15' away from you.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Danger Zone",
+            "description": "Whenever you score an area major hit, the target is debilitated for 1 round.",
+            "children": [
+              {
+                "name": "Blast Zone",
+                "description": "Whenever Danger Zone triggers, the target is pushed 10' away from you",
+                "children": []
+              },
+              {
+                "name": "Reliable Danger",
+                "description": "Danger Zone now triggers on hit, instead of major hit.",
+                "children": []
+              },
+              {
+                "name": "Cluster Zone",
+                "description": "Whenever Danger Zone triggers, all creatures of your choice adjacent to the target also suffer the same effects.",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -666,9 +998,67 @@
         "description": "Whenever a creature makes an attack against you that you have observed before (whether from that creature or another), you can use your reaction to replace your relevant defence with your Insight bonus for that attack.",
         "children": [
           {
-            "name": "Cypher Empathic descriptor",
-            "description": "",
-            "children": []
+            "name": "Gather Information",
+            "description": "You gain an expertise die in Investigation.",
+            "children": [
+              {
+                "name": "Recognise Motive",
+                "description": "You gain an expertise die in Insight.",
+                "children": []
+              },
+              {
+                "name": "Expert Gathering",
+                "description": "Gather Information's expertise die increases to a d6.",
+                "children": []
+              },
+              {
+                "name": "Unrelated Clues",
+                "description": "Whenever you spend at least 1 minute investigating an object, creature, or location, you may gain a Clue for that thing until your next long rest. You may expend a Clue charge after making an ability check directly related to its topic to add a d4 to the check's result.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Borrowed Feelings",
+            "description": "Whenever a creature within 60' of you becomes charmed or frightened, you gain +1 AB against that creature for the remainder of combat.",
+            "children": [
+              {
+                "name": "Emotional Feedback",
+                "description": "Whenever a creature you have Borrowed Feelings against hits you, it suffers acid harm equal to your level.",
+                "children": []
+              },
+              {
+                "name": "Second-hand Courage",
+                "description": "While Borrowed Feelings is active, you are immune to the charmed and frightened conditions.",
+                "children": []
+              },
+              {
+                "name": "Contagious Mood",
+                "description": "Whenever Borrowed Feelings triggers, you may choose another creature within 30' of you to gain the same condition for the same duration.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Predictable Patterns",
+            "description": "Whenever you see a creature make an attack roll, you can set aside a Prediction die (d4) if you don't already have one. Whenever that creature makes another attack, after you hear its result, you can choose to roll your Prediction die, expending it and either adding or subtracting the result from the attack roll.",
+            "children": [
+              {
+                "name": "Seen This Before",
+                "description": "Whenever you roll Predictable Patterns' Prediction die for the exact same attack that granted you the die in the first place, it becomes a d6.",
+                "children": []
+              },
+              {
+                "name": "Fate's Rehearsal",
+                "description": "Whenever you expend Predictable Patterns' Prediction die, you learn the target's maximum HP.",
+                "children": []
+              },
+              {
+                "name": "Painfully Obvious",
+                "description": "Whenever Predictable Patterns causes a creature to fail to hit with its attack roll when it otherwise would have succeeded, the next attack made against the target gains a bonus to damage equal to your level.",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -774,11 +1164,11 @@
           },
           {
             "name": "Extra Ooze",
-            "description": "Your Ooze Familiar's zone radius increases to 10' and its harm is increased by an amount equal to your proficiency bonus.",
+            "description": "Your Ooze Familiar's zone radius increases by 5' and its harm is increased by an amount equal to your proficiency bonus.",
             "children": [
               {
                 "name": "Massive Ooze",
-                "description": "Your Ooze Familiar's zone radius increases to 15'.",
+                "description": "Your Ooze Familiar's zone radius increases by 10'.",
                 "children": []
               },
               {
@@ -794,9 +1184,25 @@
             ]
           },
           {
-            "name": "Isaac Demon Baby (box of friends syn)",
-            "description": "",
-            "children": []
+            "name": "Unexpected Ally",
+            "description": "If you have no bonus minion damage, Ooze Familiar's harm is increased by an amount equal to your level.",
+            "children": [
+              {
+                "name": "Potent Ally",
+                "description": "Unexpected Ally's harm bonus increases to double your level.",
+                "children": []
+              },
+              {
+                "name": "Massive Ally",
+                "description": "If you have no bonus minion damage, Ooze Familiar's zone radius increases by 10'.",
+                "children": []
+              },
+              {
+                "name": "Doubted Ally",
+                "description": "Unexpected Ally still applies so long as your bonus minion damage is less than your level.",
+                "children": []
+              }
+            ]
           }
         ]
       },
