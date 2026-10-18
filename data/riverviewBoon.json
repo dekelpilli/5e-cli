@@ -1209,13 +1209,7 @@
       {
         "name": "Likeability",
         "description": "You can define an important contact that you have who is in an influential position, such as a minor celebrity, a police captain, or the editor of a newspaper.",
-        "children": [
-          {
-            "name": "TMA Likeable descriptor",
-            "description": "",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   }
