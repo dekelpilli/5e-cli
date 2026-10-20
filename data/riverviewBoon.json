@@ -1211,9 +1211,67 @@
         "description": "You can define an important contact that you have who is in an influential position, such as a minor celebrity, a police captain, or the editor of a newspaper.",
         "children": [
           {
-            "name": "TMA Likeable descriptor",
-            "description": "",
-            "children": []
+            "name": "Persuasive",
+            "description": "You gain an expertise die in Persuasion.",
+            "children": [
+              {
+                "name": "Deceptive",
+                "description": "You gain an expertise die in Deception.",
+                "children": []
+              },
+              {
+                "name": "Extra Persuasive",
+                "description": "Persuasive's expertise die size increases to a d6.",
+                "children": []
+              },
+              {
+                "name": "Audience of One",
+                "description": "Whenever you make a Persuasion check, you can invoke Aroshi's attention before rolling. On a 1, she becomes distracted and your roll takes a -6 penalty. On a 2+, it receives a +3 bonus.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Familiar Stranger",
+            "description": "The first time you meet a creature, you can behave as though you've met it before. The first social check you make against that creature gains a d6 expertise die.",
+            "children": [
+              {
+                "name": "Shared Memory",
+                "description": "Whenever you meet a creature with Familiar Stranger, you can immediately invent a mundane memory (DM's discretion) that you supposedly share.",
+                "children": []
+              },
+              {
+                "name": "Convenient Mistaken Identity",
+                "description": "Your social check empowered by Familiar Stranger also has advantage.",
+                "children": []
+              },
+              {
+                "name": "Who Was I Yesterday?",
+                "description": "Whenever you complete a long rest, choose a settlement, faction, or organisation you've previously encountered. Until your next long rest, when you meet a creature from that group with Familiar Stranger they must make a save. On a fail, they believe that you are a member of that group.",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Unreasonable Reputation",
+            "description": "Whenever you complete a long rest, choose a reputation from Heroic, Mysterious, Tragic, or Legendary. Until your next long rest, whenever you meet a creature for the first time, it has already heard a rumour about you matching that reputation.",
+            "children": [
+              {
+                "name": "Dangerous Gossip",
+                "description": "Whenever you use Unreasonable Reputation, the DM must tell you the rumour the creature has heard about you.",
+                "children": []
+              },
+              {
+                "name": "Believe your own Myth",
+                "description": "You gain a +1 bonus to all social checks with a creature affected by Unreasonable Reputation so long as those checks match the reputation chosen.",
+                "children": []
+              },
+              {
+                "name": "Aroshi's Favourite Episode",
+                "description": "1/LR, when you use Unreasonable Reputation, you may declare the rumour to be true. For the next hour, reality subtly conspires to support the claim with harmless coincidences, strange evidence, and suspicious timing.",
+                "children": []
+              }
+            ]
           }
         ]
       }
