@@ -39,21 +39,19 @@
       },
       "data": {
         "inline": {
-          "items": [
-            {
-              "result": "Reroll and upgrade the result with +1 colour!"
-            }
-          ],
-          "title": "Colour upgrade",
-          "subtitle": "Chromatic Energy",
-          "sections": [
-            {
-              "each": "items",
-              "item": {
-                "body": "{{result}}"
+          "view-model": {
+            "loot/title": "Colour upgrade",
+            "loot/subtitle": "Chromatic Energy",
+            "loot/sections": [
+              {
+                "section/items": [
+                  {
+                    "item/body": "Reroll and upgrade the result with +1 colour!"
+                  }
+                ]
               }
-            }
-          ]
+            ]
+          }
         }
       }
     },
@@ -133,21 +131,19 @@
       },
       "data": {
         "inline": {
-          "items": [
-            {
-              "result": "Odd mirrors expand your Dream Pool; even mirrors grant a Dream from it."
-            }
-          ],
-          "title": "Dream Mirror",
-          "subtitle": "Gift from Somnius",
-          "sections": [
-            {
-              "each": "items",
-              "item": {
-                "body": "{{result}}"
+          "view-model": {
+            "loot/title": "Dream Mirror",
+            "loot/subtitle": "Gift from Somnius",
+            "loot/sections": [
+              {
+                "section/items": [
+                  {
+                    "item/body": "Odd mirrors expand your Dream Pool; even mirrors grant a Dream from it."
+                  }
+                ]
               }
-            }
-          ]
+            ]
+          }
         }
       }
     },
@@ -278,21 +274,19 @@
       },
       "data": {
         "inline": {
-          "items": [
-            {
-              "result": "Draw 2 tarot cards from the deck."
-            }
-          ],
-          "title": "Tarot cards",
-          "subtitle": "Gift from Aroshi",
-          "sections": [
-            {
-              "each": "items",
-              "item": {
-                "body": "{{result}}"
+          "view-model": {
+            "loot/title": "Tarot cards",
+            "loot/subtitle": "Gift from Aroshi",
+            "loot/sections": [
+              {
+                "section/items": [
+                  {
+                    "item/body": "Draw 2 tarot cards from the deck."
+                  }
+                ]
               }
-            }
-          ]
+            ]
+          }
         }
       }
     },
@@ -335,20 +329,18 @@
       },
       "data": {
         "inline": {
-          "items": [
-            {
-              "result": "Player's choice and upgrade result with +1 colour!"
-            }
-          ],
-          "title": "Player's choice",
-          "sections": [
-            {
-              "each": "items",
-              "item": {
-                "body": "{{result}}"
+          "view-model": {
+            "loot/title": "Player's choice",
+            "loot/sections": [
+              {
+                "section/items": [
+                  {
+                    "item/body": "Player's choice and upgrade result with +1 colour!"
+                  }
+                ]
               }
-            }
-          ]
+            ]
+          }
         }
       }
     },

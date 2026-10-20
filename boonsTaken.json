@@ -1,14 +1,18 @@
 {
     "Quincy": [
-        "Prowess"
+        "Prowess",
+        "Staminaborn"
     ],
     "Viktor": [
-        "Intellect"
+        "Intellect",
+        "A Solution for Anything"
     ],
     "Arthur": [
-        "Constitution"
+        "Constitution",
+        "Stone Body"
     ],
     "Nathaniel": [
-        "Might"
+        "Charm",
+        "Likeability"
     ]
 }

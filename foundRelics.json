@@ -122,11 +122,11 @@
   ],
   "Viktor": [
     {
-      "name": "Mjolnir (L3)",
+      "name": "Mjolnir (L4)",
       "startingAffixes": [
         {
-          "description": "+1 bludgeoning damage",
-          "pointValue": "1",
+          "description": "+2 bludgeoning damage",
+          "pointValue": "2",
           "upgrade": "+1/1"
         },
         {
