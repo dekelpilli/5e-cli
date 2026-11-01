@@ -103,7 +103,7 @@ var FLARE_CHANCES map[string]int = map[string]int{
 	"Quincy":    29, // +1%, rank 2 (+15%)
 	"Viktor":    14, // +1%, rank 2
 	"Arthur":    35, // +1%, rank 4 (+15%)
-	"Nathaniel": 20, // +4%, rank 3
+	"Nathaniel": 27, // +8%, rank 4
 }
 
 var INSIGHTS map[string]int = map[string]int{
@@ -115,11 +115,11 @@ var INSIGHTS map[string]int = map[string]int{
 }
 
 var SPECIALISATION_TYPES map[string][]string = map[string][]string{
-	"Quincy":    {"shrine", "shrine", "crystal", "crystal", "tarot", "relic"},
-	"Viktor":    {"relic", "misc", "relic"},
-	"Arthur":    {"misc", "crystal", "shrine"},
-	"Nathaniel": {"misc", "misc", "misc"},
-	"REFERENCE": {"S4", "S9", "S12"},
+	"Quincy":    {"shrine", "shrine", "crystal", "crystal", "tarot", "relic", "?", "?"},
+	"Viktor":    {"relic", "misc", "relic", "misc"},
+	"Arthur":    {"misc", "crystal", "shrine", "?"},
+	"Nathaniel": {"misc", "misc", "misc", "misc"},
+	"REFERENCE": {"S4", "S9", "S12", "S17"},
 }
 
 var PARTY_LEVEL int = 1

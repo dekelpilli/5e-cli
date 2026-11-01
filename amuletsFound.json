@@ -102,9 +102,9 @@
         ]
     },
     "Nathaniel": {
-        "name": "The Primordial's Origin",
+        "name": "The Primordial's Origin (L5)",
         "base": {
-            "description": "+1 non-physical absorption",
+            "description": "+2 non-physical absorption",
             "upgrade": "+1"
         },
         "further": [

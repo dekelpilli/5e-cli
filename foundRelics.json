@@ -122,7 +122,7 @@
   ],
   "Viktor": [
     {
-      "name": "Mjolnir (L4)",
+      "name": "Mjolnir (L5)",
       "startingAffixes": [
         {
           "description": "+2 bludgeoning damage",
@@ -141,6 +141,11 @@
         },
         {
           "description": "+2 damage with weapon attacks enhanced by a spell",
+          "pointValue": "1",
+          "upgrade": "+1/1"
+        },
+        {
+          "description": "+1 weapon damage",
           "pointValue": "1",
           "upgrade": "+1/1"
         }

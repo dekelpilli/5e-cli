@@ -3172,58 +3172,6 @@
         ]
     },
     {
-        "name": "Cloak of Judgement",
-        "startingAffixes": [
-            {
-                "description": "whenever you are hit by a creature within 30' of you, you can use your reaction to make a ranged spell will attack against them dealing 6 psychic damage",
-                "pointValue": "1",
-                "upgrade": "+6/1"
-            },
-            {
-                "description": "while conscious, you and allies within 10' of you have +1 damage",
-                "pointValue": "4",
-                "upgrade": "+1/4"
-            },
-            {
-                "description": "1/SR, as a bonus action, you can remove a condition from all ally within 30' of you",
-                "pointValue": "4",
-                "upgrade": "they are also healed +5 HP/1"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. 1/LR, you can cast Guiding Bolt",
-                "pointValue": "1",
-                "upgrade": "upcast +1 level/1"
-            },
-            {
-                "description": "2. 1/LR, you can cast Protection from Evil and Good",
-                "pointValue": "1",
-                "upgrade": "SR -> combat -> twice per combat/1"
-            },
-            {
-                "description": "3. 1/LR, you can cast Enhance Ability",
-                "pointValue": "2",
-                "upgrade": "upcast +1 level/1"
-            },
-            {
-                "description": "4. 1/LR, you can cast Hold Person",
-                "pointValue": "2",
-                "upgrade": "upcast +1 level/1"
-            },
-            {
-                "description": "5. 1/LR, you can cast Hypnotic Pattern",
-                "pointValue": "3",
-                "upgrade": "SR -> combat -> twice per combat/3"
-            },
-            {
-                "description": "6. 1/LR, you can cast Haste",
-                "pointValue": "2",
-                "upgrade": "upcast +1 level/1"
-            }
-        ]
-    },
-    {
         "name": "Lightning Reflexes",
         "startingAffixes": [
             {
