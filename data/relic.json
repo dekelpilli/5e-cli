@@ -572,58 +572,6 @@
         ]
     },
     {
-        "name": "Feasting Baron's Cloak",
-        "startingAffixes": [
-            {
-                "description": "creatures have -1 to passive saves against your effects",
-                "pointValue": "4",
-                "upgrade": "-1/4"
-            },
-            {
-                "description": "on your first killing blow vs a creature affected by your conditions, unleash an Ice Nova causing 8 cold harm to all foes adjacent to you",
-                "pointValue": "1",
-                "upgrade": "+5/1"
-            },
-            {
-                "description": "creatures affected by your conditions have -1 resistance",
-                "pointValue": "3",
-                "upgrade": "-1/3"
-            }
-        ],
-        "thematicAffixes": [
-            {
-                "description": "1. this item's Ice Nova also staggers affected creatures for 1 round",
-                "pointValue": "3",
-                "upgrade": "creatures staggered by you have -1 resistance/3"
-            },
-            {
-                "description": "2. on killing blow, +2 outgoing harm for the remainder of combat",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "3. creatures affected by your conditions have +1 incoming harm",
-                "pointValue": "1",
-                "upgrade": "-1/1"
-            },
-            {
-                "description": "4. creatures affected by your conditions suffer 1 cold harm at the start of each of their turns",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "5. +1 resistance while bloodied",
-                "pointValue": "1",
-                "upgrade": "+1/1"
-            },
-            {
-                "description": "6. creatures affected by your conditions have -2 cold resistance",
-                "pointValue": "1",
-                "upgrade": "-1/1"
-            }
-        ]
-    },
-    {
         "name": "The Sacrificial Scholar",
         "startingAffixes": [
             {
